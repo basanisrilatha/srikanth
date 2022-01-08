@@ -1,0 +1,3359 @@
+srilatha@LAPTOP-R89H98U1:~$ ls
+InitialZing  Zing  get-docker.sh  initialzing  zing
+srilatha@LAPTOP-R89H98U1:~$ pwd
+/home/srilatha
+srilatha@LAPTOP-R89H98U1:~$ mkdir temp
+srilatha@LAPTOP-R89H98U1:~$ cd temp
+srilatha@LAPTOP-R89H98U1:~/temp$ cd
+srilatha@LAPTOP-R89H98U1:~$ ls
+InitialZing  Zing  get-docker.sh  initialzing  temp  zing
+srilatha@LAPTOP-R89H98U1:~$ cd temp
+srilatha@LAPTOP-R89H98U1:~/temp$ mkdir sri
+srilatha@LAPTOP-R89H98U1:~/temp$ cd sri
+srilatha@LAPTOP-R89H98U1:~/temp/sri$ ls
+srilatha@LAPTOP-R89H98U1:~/temp/sri$ mkdir dir1
+srilatha@LAPTOP-R89H98U1:~/temp/sri$ mkdir dir2
+srilatha@LAPTOP-R89H98U1:~/temp/sri$ ls
+dir1  dir2
+srilatha@LAPTOP-R89H98U1:~/temp/sri$ cd dir1
+srilatha@LAPTOP-R89H98U1:~/temp/sri/dir1$ cd/
+-bash: cd/: No such file or directory
+srilatha@LAPTOP-R89H98U1:~/temp/sri/dir1$ cd /
+srilatha@LAPTOP-R89H98U1:/$ pwd
+/
+srilatha@LAPTOP-R89H98U1:/$ ls
+bin   dev  home  lib    lib64   lost+found  mnt  proc  run   snap  sys  usr
+boot  etc  init  lib32  libx32  media       opt  root  sbin  srv   tmp  var
+srilatha@LAPTOP-R89H98U1:/$ cd usr
+srilatha@LAPTOP-R89H98U1:/usr$ ls
+bin  config  games  include  lib  lib32  lib64  libexec  libx32  local  sbin  share  src
+srilatha@LAPTOP-R89H98U1:/usr$ cd sys
+-bash: cd: sys: No such file or directory
+srilatha@LAPTOP-R89H98U1:/usr$ ls
+bin  config  games  include  lib  lib32  lib64  libexec  libx32  local  sbin  share  src
+srilatha@LAPTOP-R89H98U1:/usr$ cd /
+srilatha@LAPTOP-R89H98U1:/$ cd usr/local
+srilatha@LAPTOP-R89H98U1:/usr/local$ ls
+bin  etc  games  include  lib  man  sbin  share  src
+srilatha@LAPTOP-R89H98U1:/usr/local$ cd usr/games
+-bash: cd: usr/games: No such file or directory
+srilatha@LAPTOP-R89H98U1:/usr/local$ cd /
+srilatha@LAPTOP-R89H98U1:/$ cd usr/games
+srilatha@LAPTOP-R89H98U1:/usr/games$ cd
+srilatha@LAPTOP-R89H98U1:~$ pwd
+/home/srilatha
+srilatha@LAPTOP-R89H98U1:~$ cd temp
+srilatha@LAPTOP-R89H98U1:~/temp$ mkdir -p parentfld/childfld
+srilatha@LAPTOP-R89H98U1:~/temp$ ls
+parentfld  sri
+srilatha@LAPTOP-R89H98U1:~/temp$ cd childfld
+-bash: cd: childfld: No such file or directory
+srilatha@LAPTOP-R89H98U1:~/temp$ cd parentfld
+srilatha@LAPTOP-R89H98U1:~/temp/parentfld$ ls
+childfld
+srilatha@LAPTOP-R89H98U1:~/temp/parentfld$ cd childfld
+srilatha@LAPTOP-R89H98U1:~/temp/parentfld/childfld$ ls
+srilatha@LAPTOP-R89H98U1:~/temp/parentfld/childfld$ cd../..
+-bash: cd../..: No such file or directory
+srilatha@LAPTOP-R89H98U1:~/temp/parentfld/childfld$ cd ../..
+srilatha@LAPTOP-R89H98U1:~/temp$ cd /
+srilatha@LAPTOP-R89H98U1:/$ pwd
+/
+srilatha@LAPTOP-R89H98U1:/$ ls>sri.txt
+-bash: sri.txt: Permission denied
+srilatha@LAPTOP-R89H98U1:/$ cat sri.txt
+cat: sri.txt: No such file or directory
+srilatha@LAPTOP-R89H98U1:/$ ls > sri.txt
+-bash: sri.txt: Permission denied
+srilatha@LAPTOP-R89H98U1:/$ cd ..
+srilatha@LAPTOP-R89H98U1:/$ pwd
+/
+srilatha@LAPTOP-R89H98U1:/$ ls > fsam.txt
+-bash: fsam.txt: Permission denied
+srilatha@LAPTOP-R89H98U1:/$ cd temp
+-bash: cd: temp: No such file or directory
+srilatha@LAPTOP-R89H98U1:/$ ls
+bin   dev  home  lib    lib64   lost+found  mnt  proc  run   snap  sys  usr
+boot  etc  init  lib32  libx32  media       opt  root  sbin  srv   tmp  var
+srilatha@LAPTOP-R89H98U1:/$ pwd
+/
+srilatha@LAPTOP-R89H98U1:/$ cd /
+srilatha@LAPTOP-R89H98U1:/$ cd ..
+srilatha@LAPTOP-R89H98U1:/$ cd temp
+-bash: cd: temp: No such file or directory
+srilatha@LAPTOP-R89H98U1:/$ cd
+srilatha@LAPTOP-R89H98U1:~$ cd temp
+srilatha@LAPTOP-R89H98U1:~/temp$ echo "ust">ust.txt
+srilatha@LAPTOP-R89H98U1:~/temp$ ls
+parentfld  sri  ust.txt
+srilatha@LAPTOP-R89H98U1:~/temp$ cat ust.txt
+ust
+srilatha@LAPTOP-R89H98U1:~/temp$ echo "us technology">abdul.txt
+srilatha@LAPTOP-R89H98U1:~/temp$ cat abdul.txt
+us technology
+srilatha@LAPTOP-R89H98U1:~/temp$ cat ust.txt abdul.txt
+ust
+us technology
+srilatha@LAPTOP-R89H98U1:~/temp$ cat *.txt
+us technology
+ust
+srilatha@LAPTOP-R89H98U1:~/temp$ cat *s*
+cat: sri: Is a directory
+ust
+srilatha@LAPTOP-R89H98U1:~/temp$ ls
+abdul.txt  parentfld  sri  ust.txt
+srilatha@LAPTOP-R89H98U1:~/temp$ echo "deveops technology">>ust.txt
+srilatha@LAPTOP-R89H98U1:~/temp$ cat ust.txt
+ust
+deveops technology
+srilatha@LAPTOP-R89H98U1:~/temp$ echo "ansible">>ust.txt
+srilatha@LAPTOP-R89H98U1:~/temp$ echo "docker">>ust.txt
+srilatha@LAPTOP-R89H98U1:~/temp$ cat ust.txt
+ust
+deveops technology
+ansible
+docker
+srilatha@LAPTOP-R89H98U1:~/temp$ echo "raghav">>ust.txt
+srilatha@LAPTOP-R89H98U1:~/temp$ echo "raghav">>ust.txt
+srilatha@LAPTOP-R89H98U1:~/temp$ echo "raghav">>ust.txt
+srilatha@LAPTOP-R89H98U1:~/temp$ echo "raghav">>ust.txt
+srilatha@LAPTOP-R89H98U1:~/temp$ echo "raghav">>ust.txt
+srilatha@LAPTOP-R89H98U1:~/temp$ echo "raghav">>ust.txt
+srilatha@LAPTOP-R89H98U1:~/temp$ echo "raghav">>ust.txt
+srilatha@LAPTOP-R89H98U1:~/temp$ echo "raghav">>ust.txt
+srilatha@LAPTOP-R89H98U1:~/temp$ echo "raghav">>ust.txt
+srilatha@LAPTOP-R89H98U1:~/temp$
+srilatha@LAPTOP-R89H98U1:~/temp$ echo "raghav">>ust.txt
+srilatha@LAPTOP-R89H98U1:~/temp$ echo "raghav">>ust.txt
+srilatha@LAPTOP-R89H98U1:~/temp$ echo "raghav">>ust.txt
+srilatha@LAPTOP-R89H98U1:~/temp$ echo "raghav">>ust.txt
+srilatha@LAPTOP-R89H98U1:~/temp$ echo "raghav">>ust.txt
+srilatha@LAPTOP-R89H98U1:~/temp$ echo "raghav">>ust.txt
+srilatha@LAPTOP-R89H98U1:~/temp$ echo "raghav">>ust.txt
+srilatha@LAPTOP-R89H98U1:~/temp$ echo "raghav">>ust.txt
+srilatha@LAPTOP-R89H98U1:~/temp$ echo "raghav">>ust.txt
+srilatha@LAPTOP-R89H98U1:~/temp$ echo "raghav">>ust.txt
+srilatha@LAPTOP-R89H98U1:~/temp$ echo "raghav">>ust.txt
+srilatha@LAPTOP-R89H98U1:~/temp$ echo "raghav">>ust.txt
+srilatha@LAPTOP-R89H98U1:~/temp$ echo "raghav">>ust.txt
+srilatha@LAPTOP-R89H98U1:~/temp$ echo "raghav">>ust.txt
+srilatha@LAPTOP-R89H98U1:~/temp$ echo "raghav">>ust.txt
+srilatha@LAPTOP-R89H98U1:~/temp$ echo "raghav">>ust.txt
+srilatha@LAPTOP-R89H98U1:~/temp$ echo "raghav">>ust.txt
+srilatha@LAPTOP-R89H98U1:~/temp$ echo "raghav">>ust.txt
+srilatha@LAPTOP-R89H98U1:~/temp$ echo "raghav">>ust.txt
+srilatha@LAPTOP-R89H98U1:~/temp$ echo "raghav">>ust.txt
+srilatha@LAPTOP-R89H98U1:~/temp$ echo "raghav">>ust.txt
+srilatha@LAPTOP-R89H98U1:~/temp$ echo "raghav">>ust.txt
+srilatha@LAPTOP-R89H98U1:~/temp$ echo "raghav">>ust.txt
+srilatha@LAPTOP-R89H98U1:~/temp$ echo "raghav">>ust.txt
+srilatha@LAPTOP-R89H98U1:~/temp$ echo "raghav">>ust.txt
+srilatha@LAPTOP-R89H98U1:~/temp$ echo "raghav">>ust.txt
+srilatha@LAPTOP-R89H98U1:~/temp$ echo "raghav">>ust.txt
+srilatha@LAPTOP-R89H98U1:~/temp$ echo "raghav">>ust.txt
+srilatha@LAPTOP-R89H98U1:~/temp$ echo "raghav">>ust.txt
+srilatha@LAPTOP-R89H98U1:~/temp$ echo "raghav">>ust.txt
+srilatha@LAPTOP-R89H98U1:~/temp$ echo "raghav">>ust.txt
+srilatha@LAPTOP-R89H98U1:~/temp$ less ust.txt
+srilatha@LAPTOP-R89H98U1:~/temp$ cd sri
+srilatha@LAPTOP-R89H98U1:~/temp/sri$ ls
+dir1  dir2
+srilatha@LAPTOP-R89H98U1:~/temp/sri$ mv dir1 dir2
+srilatha@LAPTOP-R89H98U1:~/temp/sri$ ls
+dir2
+srilatha@LAPTOP-R89H98U1:~/temp/sri$ cd ..
+srilatha@LAPTOP-R89H98U1:~/temp$ ls
+abdul.txt  parentfld  sri  ust.txt
+srilatha@LAPTOP-R89H98U1:~/temp$ mv abdul.txt ust.txt
+srilatha@LAPTOP-R89H98U1:~/temp$ ls
+parentfld  sri  ust.txt
+srilatha@LAPTOP-R89H98U1:~/temp$ cat ust.txt
+us technology
+srilatha@LAPTOP-R89H98U1:~/temp$ ls
+parentfld  sri  ust.txt
+srilatha@LAPTOP-R89H98U1:~/temp$ echo "ansible">us.txt
+srilatha@LAPTOP-R89H98U1:~/temp$ ls
+parentfld  sri  us.txt  ust.txt
+srilatha@LAPTOP-R89H98U1:~/temp$ cp us.txt ust.txt
+srilatha@LAPTOP-R89H98U1:~/temp$ ls
+parentfld  sri  us.txt  ust.txt
+srilatha@LAPTOP-R89H98U1:~/temp$ cat ust.txt
+ansible
+srilatha@LAPTOP-R89H98U1:~/temp$ cat us.txt
+ansible
+srilatha@LAPTOP-R89H98U1:~/temp$ mv us.txt ust.txt
+srilatha@LAPTOP-R89H98U1:~/temp$ ls
+parentfld  sri  ust.txt
+srilatha@LAPTOP-R89H98U1:~/temp$ whoami
+srilatha
+srilatha@LAPTOP-R89H98U1:~/temp$ who
+srilatha@LAPTOP-R89H98U1:~/temp$ id
+uid=1000(srilatha) gid=1000(srilatha) groups=1000(srilatha),4(adm),20(dialout),24(cdrom),25(floppy),27(sudo),29(audio),30(dip),44(video),46(plugdev),117(netdev),1005(docker)
+srilatha@LAPTOP-R89H98U1:~/temp$ w
+ 19:24:11 up  6:07,  0 users,  load average: 0.61, 0.61, 0.80
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+srilatha@LAPTOP-R89H98U1:~/temp$ passwd
+Changing password for srilatha.
+Current password:
+New password:
+Retype new password:
+passwd: password updated successfully
+srilatha@LAPTOP-R89H98U1:~/temp$ man man
+srilatha@LAPTOP-R89H98U1:~/temp$ cd /
+srilatha@LAPTOP-R89H98U1:/$ ls
+bin   dev  home  lib    lib64   lost+found  mnt  proc  run   snap  sys  usr
+boot  etc  init  lib32  libx32  media       opt  root  sbin  srv   tmp  var
+srilatha@LAPTOP-R89H98U1:/$  /etc/passwd
+-bash: /etc/passwd: Permission denied
+srilatha@LAPTOP-R89H98U1:/$ cd
+srilatha@LAPTOP-R89H98U1:~$ cat etc/passwd
+cat: etc/passwd: No such file or directory
+srilatha@LAPTOP-R89H98U1:~$ sudo useradd smile
+[sudo] password for srilatha:
+srilatha@LAPTOP-R89H98U1:~$ pwd
+/home/srilatha
+srilatha@LAPTOP-R89H98U1:~$ cat /etc/passwd
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:100:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:101:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+systemd-timesync:x:102:104:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:103:106::/nonexistent:/usr/sbin/nologin
+syslog:x:104:110::/home/syslog:/usr/sbin/nologin
+_apt:x:105:65534::/nonexistent:/usr/sbin/nologin
+tss:x:106:111:TPM software stack,,,:/var/lib/tpm:/bin/false
+uuidd:x:107:112::/run/uuidd:/usr/sbin/nologin
+tcpdump:x:108:113::/nonexistent:/usr/sbin/nologin
+sshd:x:109:65534::/run/sshd:/usr/sbin/nologin
+landscape:x:110:115::/var/lib/landscape:/usr/sbin/nologin
+pollinate:x:111:1::/var/cache/pollinate:/bin/false
+srilatha:x:1000:1000:,,,:/home/srilatha:/bin/bash
+user1:x:1001:1001:,,,:/home/user1:/bin/bash
+user2:x:1002:1002:,,,:/home/user2:/bin/bash
+user11:x:1003:1003:,,,:/home/user11:/bin/bash
+user12:x:1004:1004:,,,:/home/user12:/bin/bash
+smile:x:1005:1006::/home/smile:/bin/sh
+srilatha@LAPTOP-R89H98U1:~$ groupadd
+Usage: groupadd [options] GROUP
+
+Options:
+  -f, --force                   exit successfully if the group already exists,
+                                and cancel -g if the GID is already used
+  -g, --gid GID                 use GID for the new group
+  -h, --help                    display this help message and exit
+  -K, --key KEY=VALUE           override /etc/login.defs defaults
+  -o, --non-unique              allow to create groups with duplicate
+                                (non-unique) GID
+  -p, --password PASSWORD       use this encrypted password for the new group
+  -r, --system                  create a system account
+  -R, --root CHROOT_DIR         directory to chroot into
+  -P, --prefix PREFIX_DIR       directory prefix
+      --extrausers              Use the extra users database
+
+srilatha@LAPTOP-R89H98U1:~$ usermod
+Usage: usermod [options] LOGIN
+
+Options:
+  -b, --badnames                allow bad names
+  -c, --comment COMMENT         new value of the GECOS field
+  -d, --home HOME_DIR           new home directory for the user account
+  -e, --expiredate EXPIRE_DATE  set account expiration date to EXPIRE_DATE
+  -f, --inactive INACTIVE       set password inactive after expiration
+                                to INACTIVE
+  -g, --gid GROUP               force use GROUP as new primary group
+  -G, --groups GROUPS           new list of supplementary GROUPS
+  -a, --append                  append the user to the supplemental GROUPS
+                                mentioned by the -G option without removing
+                                the user from other groups
+  -h, --help                    display this help message and exit
+  -l, --login NEW_LOGIN         new value of the login name
+  -L, --lock                    lock the user account
+  -m, --move-home               move contents of the home directory to the
+                                new location (use only with -d)
+  -o, --non-unique              allow using duplicate (non-unique) UID
+  -p, --password PASSWORD       use encrypted password for the new password
+  -R, --root CHROOT_DIR         directory to chroot into
+  -P, --prefix PREFIX_DIR       prefix directory where are located the /etc/* files
+  -s, --shell SHELL             new login shell for the user account
+  -u, --uid UID                 new UID for the user account
+  -U, --unlock                  unlock the user account
+  -v, --add-subuids FIRST-LAST  add range of subordinate uids
+  -V, --del-subuids FIRST-LAST  remove range of subordinate uids
+  -w, --add-subgids FIRST-LAST  add range of subordinate gids
+  -W, --del-subgids FIRST-LAST  remove range of subordinate gids
+  -Z, --selinux-user SEUSER     new SELinux user mapping for the user account
+
+srilatha@LAPTOP-R89H98U1:~$ sudo groupadd training
+srilatha@LAPTOP-R89H98U1:~$ ls
+InitialZing  Zing  get-docker.sh  initialzing  temp  zing
+srilatha@LAPTOP-R89H98U1:~$ ls -il
+total 40
+16663 drwxrwxr-x 2 srilatha srilatha  4096 Dec 28 17:04 InitialZing
+ 6371 drwxr-xr-x 2 srilatha srilatha  4096 Dec 28 16:51 Zing
+40732 -rw-r--r-- 1 srilatha srilatha 18617 Dec 28 10:04 get-docker.sh
+16679 drwxr-xr-x 2 srilatha srilatha  4096 Dec 28 17:29 initialzing
+41062 drwxr-xr-x 4 srilatha srilatha  4096 Jan  7 19:22 temp
+16674 drwxr-xr-x 2 srilatha srilatha  4096 Dec 28 17:08 zing
+srilatha@LAPTOP-R89H98U1:~$ ls
+InitialZing  Zing  get-docker.sh  initialzing  temp  zing
+srilatha@LAPTOP-R89H98U1:~$ ls -a
+.     .azure         .bashrc             .get-docker.sh.swp  .local       .sudo_as_admin_successful  Zing           temp
+..    .bash_history  .docker             .kube               .motd_shown  .viminfo                   get-docker.sh  zing
+.aws  .bash_logout   .get-docker.sh.swo  .landscape          .profile     InitialZing                initialzing
+srilatha@LAPTOP-R89H98U1:~$ ls -l
+total 40
+drwxrwxr-x 2 srilatha srilatha  4096 Dec 28 17:04 InitialZing
+drwxr-xr-x 2 srilatha srilatha  4096 Dec 28 16:51 Zing
+-rw-r--r-- 1 srilatha srilatha 18617 Dec 28 10:04 get-docker.sh
+drwxr-xr-x 2 srilatha srilatha  4096 Dec 28 17:29 initialzing
+drwxr-xr-x 4 srilatha srilatha  4096 Jan  7 19:22 temp
+drwxr-xr-x 2 srilatha srilatha  4096 Dec 28 17:08 zing
+srilatha@LAPTOP-R89H98U1:~$ echo "deepa">pdt.txt
+srilatha@LAPTOP-R89H98U1:~$ ls
+InitialZing  Zing  get-docker.sh  initialzing  pdt.txt  temp  zing
+srilatha@LAPTOP-R89H98U1:~$ chmod o-w pdt.txt
+srilatha@LAPTOP-R89H98U1:~$ ls -lh pdt.txt
+-rw-r--r-- 1 srilatha srilatha 6 Jan  7 19:35 pdt.txt
+srilatha@LAPTOP-R89H98U1:~$ touch hami
+srilatha@LAPTOP-R89H98U1:~$ ls
+InitialZing  Zing  get-docker.sh  hami  initialzing  pdt.txt  temp  zing
+srilatha@LAPTOP-R89H98U1:~$ cat hami
+srilatha@LAPTOP-R89H98U1:~$ ls -alh
+total 120K
+drwxr-xr-x 11 srilatha srilatha 4.0K Jan  7 19:38 .
+drwxr-xr-x  7 root     root     4.0K Dec 28 17:09 ..
+lrwxrwxrwx  1 srilatha srilatha   23 Jan  1 11:26 .aws -> /mnt/c/Users/srika/.aws
+lrwxrwxrwx  1 srilatha srilatha   25 Jan  1 11:26 .azure -> /mnt/c/Users/srika/.azure
+-rw-------  1 srilatha srilatha 1.9K Jan  6 13:51 .bash_history
+-rw-r--r--  1 srilatha srilatha  220 Dec 28 08:56 .bash_logout
+-rw-r--r--  1 srilatha srilatha 3.7K Dec 28 08:56 .bashrc
+drwxr-xr-x  4 srilatha srilatha 4.0K Jan  1 11:26 .docker
+-rw-r--r--  1 srilatha srilatha  16K Dec 28 10:04 .get-docker.sh.swo
+-rw-r--r--  1 srilatha srilatha  16K Dec 28 09:08 .get-docker.sh.swp
+drwxr-xr-x  2 srilatha srilatha 4.0K Jan  6 16:25 .kube
+drwxr-xr-x  2 srilatha srilatha 4.0K Dec 28 08:56 .landscape
+drwxrwxr-x  3 srilatha srilatha 4.0K Dec 28 17:02 .local
+-rw-r--r--  1 srilatha srilatha    0 Jan  7 17:46 .motd_shown
+-rw-r--r--  1 srilatha srilatha  807 Dec 28 08:56 .profile
+-rw-r--r--  1 srilatha srilatha    0 Dec 28 09:11 .sudo_as_admin_successful
+-rw-------  1 srilatha srilatha  913 Dec 28 10:04 .viminfo
+drwxrwxr-x  2 srilatha srilatha 4.0K Dec 28 17:04 InitialZing
+drwxr-xr-x  2 srilatha srilatha 4.0K Dec 28 16:51 Zing
+-rw-r--r--  1 srilatha srilatha  19K Dec 28 10:04 get-docker.sh
+-rw-r--r--  1 srilatha srilatha    0 Jan  7 19:38 hami
+drwxr-xr-x  2 srilatha srilatha 4.0K Dec 28 17:29 initialzing
+-rw-r--r--  1 srilatha srilatha    6 Jan  7 19:35 pdt.txt
+drwxr-xr-x  4 srilatha srilatha 4.0K Jan  7 19:22 temp
+drwxr-xr-x  2 srilatha srilatha 4.0K Dec 28 17:08 zing
+srilatha@LAPTOP-R89H98U1:~$ nano hams.txt
+srilatha@LAPTOP-R89H98U1:~$ cat hams.txt
+sri
+latha
+kanth
+sree
+sravs
+
+srilatha@LAPTOP-R89H98U1:~$ rm --hami.txt
+rm: unrecognized option '--hami.txt'
+Try 'rm --help' for more information.
+srilatha@LAPTOP-R89H98U1:~$ rm --hams.txt
+rm: unrecognized option '--hams.txt'
+Try 'rm --help' for more information.
+srilatha@LAPTOP-R89H98U1:~$ rm hams.txt
+srilatha@LAPTOP-R89H98U1:~$ ls
+InitialZing  Zing  get-docker.sh  hami  initialzing  pdt.txt  temp  zing
+srilatha@LAPTOP-R89H98U1:~$ find .-name*.txt
+find: ‘.-name*.txt’: No such file or directory
+srilatha@LAPTOP-R89H98U1:~$ find .-name*.*
+find: ‘.-name*.*’: No such file or directory
+srilatha@LAPTOP-R89H98U1:~$ find .name hami -delete
+find: ‘.name’: No such file or directory
+srilatha@LAPTOP-R89H98U1:~$ find .-name hami -delete
+find: ‘.-name’: No such file or directory
+find: ‘hami’: No such file or directory
+srilatha@LAPTOP-R89H98U1:~$ free
+              total        used        free      shared  buff/cache   available
+Mem:        2975836     1431320       88436      333872     1456080     1047452
+Swap:       1048576       64316      984260
+srilatha@LAPTOP-R89H98U1:~$ uptime
+ 19:49:13 up  6:32,  0 users,  load average: 0.44, 0.60, 0.68
+srilatha@LAPTOP-R89H98U1:~$
+srilatha@LAPTOP-R89H98U1:~$ pmap
+
+Usage:
+ pmap [options] PID [PID ...]
+
+Options:
+ -x, --extended              show details
+ -X                          show even more details
+            WARNING: format changes according to /proc/PID/smaps
+ -XX                         show everything the kernel provides
+ -c, --read-rc               read the default rc
+ -C, --read-rc-from=<file>   read the rc from file
+ -n, --create-rc             create new default rc
+ -N, --create-rc-to=<file>   create new rc to file
+            NOTE: pid arguments are not allowed with -n, -N
+ -d, --device                show the device format
+ -q, --quiet                 do not display header and footer
+ -p, --show-path             show path in the mapping
+ -A, --range=<low>[,<high>]  limit results to the given range
+
+ -h, --help     display this help and exit
+ -V, --version  output version information and exit
+
+For more details see pmap(1).
+srilatha@LAPTOP-R89H98U1:~$ top
+top - 11:12:41 up  1:04,  0 users,  load average: 3.63, 2.66, 1.77
+Tasks:  10 total,   1 running,   9 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  5.4 us,  4.1 sy,  0.0 ni, 89.0 id,  0.8 wa,  0.0 hi,  0.7 si,  0.0 st
+MiB Mem :   2906.1 total,    102.3 free,   1347.6 used,   1456.2 buff/cache
+MiB Swap:   1024.0 total,   1014.7 free,      9.3 used.   1047.3 avail Mem
+
+  PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  119 srilatha  20   0  763496  49192  31896 S   0.3   1.7   0:05.69 docker
+  254 srilatha  20   0   10876   3776   3268 R   0.3   0.1   0:00.03 top
+    1 root      20   0     900    532    464 S   0.0   0.0   0:00.35 init
+  109 root      20   0     900     88     20 S   0.0   0.0   0:00.00 init
+  110 root      20   0     900     88     20 S   0.0   0.0   0:00.08 init
+  111 root      20   0 1162344  29396  13384 S   0.0   1.0   0:19.53 docker-desktop-
+  118 root      20   0     900     88     20 S   0.0   0.0   0:00.03 init
+  238 root      20   0     900     88     20 S   0.0   0.0   0:00.00 init
+  239 root      20   0     900     88     20 S   0.0   0.0   0:00.05 init
+  240 srilatha  20   0   10040   5172   3468 S   0.0   0.2   0:00.57 bash
+
+
+
+
+
+
+
+
+
+
+
+srilatha@LAPTOP-R89H98U1:~$ htop
+srilatha@LAPTOP-R89H98U1:~$ last
+
+wtmp begins Tue Dec 28 08:55:36 2021
+srilatha@LAPTOP-R89H98U1:~$ ps
+  PID TTY          TIME CMD
+  240 pts/2    00:00:00 bash
+  257 pts/2    00:00:00 ps
+srilatha@LAPTOP-R89H98U1:~$ info
+srilatha@LAPTOP-R89H98U1:~$ env
+SHELL=/bin/bash
+WSL_DISTRO_NAME=Ubuntu-20.04
+NAME=LAPTOP-R89H98U1
+PWD=/home/srilatha
+LOGNAME=srilatha
+HOME=/home/srilatha
+LANG=C.UTF-8
+WSL_INTEROP=/run/WSL/239_interop
+LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+LESSCLOSE=/usr/bin/lesspipe %s %s
+TERM=xterm-256color
+LESSOPEN=| /usr/bin/lesspipe %s
+USER=srilatha
+SHLVL=1
+WSLENV=
+XDG_DATA_DIRS=/usr/local/share:/usr/share:/var/lib/snapd/desktop
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/CanonicalGroupLimited.Ubuntu20.04onWindows_2004.2021.825.0_x64__79rhkp1fndgsc:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/Java/jdk-16.0.2/bin:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/ProgramData/DockerDesktop/version-bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/srika/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/srika/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin
+HOSTTYPE=x86_64
+_=/usr/bin/env
+srilatha@LAPTOP-R89H98U1:~$ df
+Filesystem     1K-blocks      Used Available Use% Mounted on
+/dev/sdd       263174212   1405104 248330952   1% /
+tmpfs            1487916    373264   1114652  26% /mnt/wsl
+/dev/sdc       263174212   5255860 244480196   3% /mnt/wsl/docker-desktop-data/isocache
+none             1487916        12   1487904   1% /mnt/wsl/docker-desktop/shared-sockets/host-services
+/dev/sdb       263174212    124948 249611108   1% /mnt/wsl/docker-desktop/docker-desktop-proxy
+/dev/loop0        342106    342106         0 100% /mnt/wsl/docker-desktop/cli-tools
+tools          232337404 127172168 105165236  55% /init
+none             1485832         0   1485832   0% /dev
+none             1487916         8   1487908   1% /run
+none             1487916         0   1487916   0% /run/lock
+none             1487916         0   1487916   0% /run/shm
+none             1487916         0   1487916   0% /run/user
+tmpfs            1487916         0   1487916   0% /sys/fs/cgroup
+drivers        232337404 127172168 105165236  55% /usr/lib/wsl/drivers
+lib            232337404 127172168 105165236  55% /usr/lib/wsl/lib
+C:\            232337404 127172168 105165236  55% /mnt/c
+D:\             16412668     49000  16363668   1% /mnt/d
+srilatha@LAPTOP-R89H98U1:~$
+srilatha@LAPTOP-R89H98U1:~$ python3
+Python 3.8.10 (default, Jun  2 2021, 10:49:15)
+[GCC 9.4.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> print("hello")
+hello
+>>> 23+2
+25
+>>> 23-2
+21
+>>> 23*2
+46
+>>> 23/2
+11.5
+>>> 23//2
+11
+>>> 23%2
+1
+>>> name="srilatha"
+>>> no=206277
+>>> location=hyderabad
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'hyderabad' is not defined
+>>> location="hyderabad"
+>>> print(name,no,location)
+srilatha 206277 hyderabad
+>>> no=20
+>>> if(no<10):
+...    print(no,'single digit')
+... else:
+...    print(no,'multi digit')
+...
+20 multi digit
+>>> no=8
+>>> if(n0<10):
+...
+  File "<stdin>", line 2
+
+    ^
+IndentationError: expected an indented block
+>>> no=8
+>>> if(no<10):
+...     print(no,'single digit no')
+... else:
+...    print(no,'double digit no')
+...
+8 single digit no
+>>> no=888
+>>> if(no<10):
+...    print(no,'single digit no')
+... elif(no<100:)
+  File "<stdin>", line 3
+    elif(no<100:)
+               ^
+SyntaxError: invalid syntax
+>>> elif(no<100):
+  File "<stdin>", line 1
+    elif(no<100):
+    ^
+SyntaxError: invalid syntax
+>>> names=['sri','sravs','ramya','shivudu','mouni']
+>>> name[4]
+'a'
+>>> names[4]
+'mouni'
+>>> print(name[5])
+t
+>>> print(names[5])
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+IndexError: list index out of range
+>>> print(names[3])
+shivudu
+>>> for name in names:
+... print(name)
+  File "<stdin>", line 2
+    print(name)
+    ^
+IndentationError: expected an indented block
+>>>
+>>>
+>>> for name in names:
+...      print(name)
+...
+sri
+sravs
+ramya
+shivudu
+mouni
+>>> name=input("enter your name")
+enter your namesrilatha
+>>> print(name)
+srilatha
+>>> students=['adam','alex','banu','bindu','charley']
+>>> for student in students:
+...     print(students)
+...
+['adam', 'alex', 'banu', 'bindu', 'charley']
+['adam', 'alex', 'banu', 'bindu', 'charley']
+['adam', 'alex', 'banu', 'bindu', 'charley']
+['adam', 'alex', 'banu', 'bindu', 'charley']
+['adam', 'alex', 'banu', 'bindu', 'charley']
+>>> class trainee:
+...     def__init__(self,name,id):
+  File "<stdin>", line 2
+    def__init__(self,name,id):
+                             ^
+SyntaxError: invalid syntax
+>>> class trainee:
+...     def __init__(self,name,id):
+...              self.name=name
+...              self.id=id
+...     def showtrainee(self):
+...              print(self.id, " ",self.name)
+...
+>>> trn=trainee("sri",206277)
+>>> trn.showtrainee()
+206277   sri
+>>> class veggies:
+...     name='tomato'
+...     def setveg(self,name):
+...             self.name=name
+...     def getveg(self):
+...             print(self.name)
+... veg=veggies()
+  File "<stdin>", line 7
+    veg=veggies()
+    ^
+SyntaxError: invalid syntax
+>>> veg=veggies()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'veggies' is not defined
+>>> veg=veggies()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'veggies' is not defined
+>>>
+  518  nano allcontent.txt
+  519  echo "shivaleela" > focus.txt
+  520  cat focus.txt
+  521  echo "bhanu" > myfile.txt
+  522  cat myfile.txt
+  523  ls
+  524  rm  focus.txt
+  525  ls
+  526  find myfile.txt
+  527  find allcontent.txt
+  528  find . -type d -name "t*"
+  529  find . -name myfile.txt -delete
+  530  ls
+  531  free
+  532  uptime
+  533  mkdir bhanu
+  534  ls
+  535  touch myfile.txt
+  536  ls
+  537  cat myfile.txt
+  538  ls
+  539  echo "sunny" > emptyfile.txt
+  540  cat emptyfile.txt
+  541  echo "pandu" > content.txt
+  542  cat content.txt
+  543  echo "nani" > file.txt
+  544  cat file.txt
+  545  ls -l
+  546  file
+  547  pwd
+  548  ls
+  549  file myfile.txt
+  550  file content.txt
+  551  pwd
+  552  ls
+  553  nano allcontent.txt
+  554  pwd
+  555  ls
+  556  nano alpha.txt
+  557  cat alpha.txt
+  558  pwd
+  559  rm gama.txt
+  560  rm beta.txt
+  561  rm alpha.txt
+  562  clear
+  563  pwd 
+  564  ls 
+  565  mkdir shivaleela
+  566  cd shivaleela
+  567  echo "trainee" > gama.txt
+  568  echo "mom" > alpha.txt
+  569  echo "power" > beta.txt
+  570  cd
+  571  file 
+  572  clear
+  573  rm gama.txt
+  574  ls
+  575  pwd
+  576  ls
+  577  rm gama.txt
+  578  rm alpha.txt
+  579  rm beta.txt
+  580  ls
+  581  clear
+  582  pwd ls
+  583  clear
+  584  pwd
+  585  ls
+  586  mkdir shiv
+  587  ls
+  588  echo "trainee" > alpha.txt
+  589  cat alpha.txt
+  590  echo "power" > gama.txt
+  591  cat gama.txt
+  592  echo "happy" > beta.txt
+  593  cat beta.txt
+  594  ls
+  595  chmod -w content.txt
+  596  ls
+  597  file gama.txt
+  598  ls -il
+  599  ls -l
+  600  nano allcontent.txt
+  601  ls
+  602  rm file.txt
+  603  rm beta.txt
+  604  ls
+  605  find allcontent.txt
+  606  cat *.txt
+  607  find . -type f -name "*.txt"
+  608  find . -type d -name "t*"
+  609  find . -name gama.txt -delete
+  610  ls
+  611  free
+  612  uptime
+  613  nano alpha.txt
+  614  cat alpha.txt
+  615  mkdir mom
+  616  cd 
+  617  cd mom
+  618  cd
+  619  pwd
+  620  ls
+  621  mkdir trainee
+  622  cd trainee
+  623  echo "mom" > gama.txt
+  624  echo "sri" > alpha.txt
+  625  echo "mani" > beta.txt
+  626  ls
+  627  cd
+  628  chmod -w content.txt
+  629  file allcontent.txt
+  630  ls -il
+  631  ls -l
+  632  nano beta.txt
+  633  cat beta.txt
+  634  rm gama.txt
+  635  rm alpha.txt
+  636  rm 
+  637  ls
+  638  rm emptyfile.txt
+  639  ls
+  640  find allcontent.txt
+  641  cat *.txt
+  642  find . -type d -name "*t"
+  643  ls
+  644  find . -name file.txt -delete
+  645  ls
+  646  free
+  647  uptime
+  648  pwd
+  649  ls
+  650  mkdir linux
+  651  cd linux
+  652  sudo apt update
+  653  sudo apt install software-properties-common
+  654  sudo add-apt-repository --yes --update ppa:ansible/ansible
+  655  sudo apt install ansible
+  656  python3
+  657  clear
+  658  python3
+  659  pwd
+  660  ls
+  661  touch multicontent.txt
+  662  ls
+  663  chmod +r multicontent.txt
+  664  chmod -w multicontent.txt
+  665  ls -lh multicontent.txt
+  666  mount
+  667  mount -t multicontent.txt
+  668  ls
+  669  man mount
+  670  mount -o options device_name direct
+  671  man service
+  672  service
+  673  service --status-all
+  674  python3
+  675  ansible --version
+  676  sudo apt install python3-argcomplete
+  677  ansible
+  678  pwd
+  679  ls
+  680  cd /etc/ansible
+  681  ls
+  682  cat hosts
+  683  cd roles
+  684  ls
+  685  ls -a
+  686  sudo nano hosts
+  687  cd ..
+  688  sudo nano hosts
+  689  pwd
+  690  ls
+  691  chmod +r beta.txt
+  692  chmod -w beta.txt
+  693  ls -lh
+  694  touch multicontent.txt
+  695  ls
+  696  service
+  697  service --status-all
+  698  man service
+  699  /etc/init.d
+  700  service /etc/init.d
+  701  cd /etc/init.d
+  702  ls
+  703  sudo service cron start
+  704  sudo service cron stop
+  705  service ls
+  706  cd ..
+  707  cd
+  708  sudo apt update
+  709  sudo apt install software-properties-common
+  710  sudo add-apt-repository --yes --update ppa:ansible/ansible
+  711  sudo apt install ansible
+  712  ansible --version
+  713  ansible all -m ping --ask-pass
+  714  ansible -m ping --ask-pass
+  715  sudo apt install python3-argcomplete
+  716  ansible all -m ping --ask-all
+  717  sudo apt install python3-argcomplete
+  718  top
+  719  free
+  720  ps
+  721  df
+  722  pwd
+  723  ls
+  724  echo "iam shivaleela" > myinfo.txt
+  725  cat myinfo.txt
+  726  chmod +r myinfo.txt
+  727  chmod +w myinfo.txt
+  728  ls -hl myinfo.txt
+  729  ls
+  730  pwd 
+  731  ls
+  732  rm myinfo.txt
+  733  ls
+  734  clear
+  735  pwd 
+  736  ls
+  737  echo "bhanu" > myinfo.txt
+  738  ls
+  739  chmod +r myinfo.txt
+  740  ls -hl myinfo.txt
+  741  chmod +w myinfo.txt
+  742  ls -hl
+  743  ls -hl myinfo.txt
+  744  cat myinfo.txt
+  745  shell
+  746  SHELL
+  747  echo SHELL
+  748  echo $SHELL
+  749  #!/bin/bash
+  750  echo hello team
+  751  nano
+  752  ./myinfo.txt
+  753  cat myinfo.txt
+  754  chmod +x myinfo.txt
+  755  ./myinfo.txt
+  756  echo "team" > self.sh
+  757  ls -l self.txt
+  758  ls -l self.sh
+  759  chmod +x self.sh
+  760  ls -hl self.sh
+  761  ./self.sh
+  762  cat self.sh
+  763  nano
+  764  chmod +x myshell.sh
+  765  ./myshell.sh
+  766  nano myshell.sh
+  767  ./myshell.txt
+  768  ./myshell.sh
+  769  touch myfile
+  770  ls
+  771  nano myfile
+  772  ls
+  773  chmod +x myfile
+  774  ./myfile
+  775  nano
+  776  nano myscript.txt
+  777  chmod +x mycommands.sh
+  778  ./mycommands.sh
+  779  pwd
+  780  touch bash_aliases
+  781  nano .bash_aliases
+  782  ./dir
+  783  dir
+  784  chmod +x reading.sh
+  785  touch reading.sh
+  786  ls
+  787  chmod +x reading.sh
+  788  ./reading.sh
+  789  nano reading.sh
+  790  ./reading.sh
+  791  nano reading.sh
+  792  ./reading.sh
+  793  clear
+  794  pwd 
+  795  ls
+  796  nano
+  797  n
+  798  ls -l examplereading.sh
+  799  chmod 774 examplereading.sh
+  800  ./exaplereading.sh
+  801  ./examplereading.sh
+  802  rm reading.sh
+  803  ls
+  804  nano reading.sh
+  805  ./exampleread.sh
+  806  chmod 774 exampleread.sh
+  807  ./exampleread.sh
+  808  nano
+  809  ./teddybear.sh
+  810  chmod 774 teddybear.sh
+  811  ./teddybear.sh
+  812  touch bash_alias
+  813  nano .bash_alias
+  814  ./.bash_alias
+  815  chmod 774 .bash_alias
+  816  ./.bash_alias
+  817  ./bash_alias
+  818  chmod 774 bash_alias
+  819  ./bash_alias
+  820  touch bash_aliases
+  821  nano bash_aliases
+  822  ./examplereading.sh
+  823  nano bash_aliases
+  824  ./example.sh
+  825  chmod 774 example.sh
+  826  ./example.sh
+  827  ll
+  828  nano .bash_aliases
+  829  rm bash_aliases
+  830  ls
+  831  rm examplereading.sh
+  832  ls
+  833  clear
+  834  touch bash_aliases
+  835  nano .bash_aliases
+  836  ls -l
+  837  ls -a
+  838  ls -h
+  839  ll
+  840  la
+  841  lp
+  842  clear
+  843  touch bash_aliases
+  844  nano .bash_aliases
+  845  ./bash_aliases.sh
+  846  ./.bash_aliases.sh
+  847  rm bash_aliases
+  848  ls
+  849  clear
+  850  touch bash_aliases
+  851  clear
+  852  touch .bash_aliases
+  853  nano .bash_aliases
+  854  ./bash_alias.sh
+  855  nano .bash_aliases
+  856  ./bash_aliases.sh
+  857  chmod 774 bash_aliases.sh
+  858  ./bash_aliases.sh
+  859  ll
+  860  la
+  861  li
+  862  lp
+  863  nano .bash_aliases
+  864  rm bash_aliases.sh
+  865  ls
+  866  clear
+  867  touch bash_aliases
+  868  nano .bash_aliases
+  869  ll
+  870  la
+  871  lp
+  872  ll
+  873  cat .bash_aliases
+  874  ll
+  875  nano bhanu.txt
+  876  nano helloscript.sh
+  877  chmod 774 helloscript.sh
+  878  ./helloscript.sh
+  879  ./helloscript.sh 10 20 30 40 50 60 70 80 90
+  880  ./helloscript.sh 206281 shiva leela bhanu hyderabad ts ust 922 sandy nani
+  881  nano decision.sh
+  882  cat mango.sh
+  883  chmod 774 mango.sh
+  884  ./mango.sh
+  885  nano mango.sh
+  886  chmod 774 fruits.sh
+  887  ./fruits.sh
+  888  ./hello.script
+  889  nano helloscript.sh
+  890  nano fruits.sh
+  891  nano
+  892  chmod 774 forloop.sh
+  893  ./forloop.sh
+  894  nano
+  895  chmod 774 whiledemo.sh
+  896  ./whiledemo.sh
+  897  nano whiledemo.sh
+  898  chmod 774 whileloop.sh
+  899  ./whileloop.sh
+  900  pwd
+  901  ls
+  902  nano
+  903  chmod 774 shiv.sh
+  904  ./shiv.sh
+  905  nano shi.sh
+  906  ./shiv.sh
+  907  nano shiv.sh
+  908  ./shiv.sh
+  909  nano
+  910  nano var.sh
+  911  chmod var.sh
+  912  clear
+  913  nano var.sh
+  914  chmod 774.sh
+  915  clear
+  916  nano var.sh
+  917  chmod 774 var.sh
+  918  ./var.sh
+  919  nano var.sh
+  920  ./var.sh
+  921  echo $SHELL
+  922  ./var.sh
+  923  nano 
+  924  chmod 774 name.sh
+  925  ./name.sh
+  926  nano name.sh
+  927  ./name.sh
+  928  nano reading.sh
+  929  clear
+  930  nano reading.sh
+  931  chmod 774 reading.sh
+  932  ./reading.sh
+  933  nano var.sh
+  934  chmod var.sh
+  935  chmod 774 var.sh
+  936  ./var.sh
+  937  nano
+  938  chmod file.sh
+  939  chmod 774 file.sh
+  940  ./file.sh
+  941  nano file.sh
+  942  ./file.sh
+  943  clear
+  944  nano reading.sh
+  945  chmod 774 reading.sh
+  946  ./reading.sh
+  947  nano file.sh
+  948  chmod 774 file.sh
+  949  ./file.sh
+  950  nano loop.sh
+  951  chmod 774 loop.sh
+  952  ./loop.sh
+  953  nano loop.sh
+  954  ./loop.sh
+  955  nano loop.sh
+  956  ./loop.sh
+  957  nano loop.sh
+  958  ./loop.sh
+  959  nano loop.sh
+  960  ./loop.sh
+  961  nano loop.sh
+  962  ./loop.sh
+  963  nano loop.sh
+  964  ./loop.sh
+  965  nano loop.sh
+  966  ./loop.sh
+  967  nano loop.sh
+  968  ./loop.sh
+  969  nano food.sh
+  970  chmod 774 food.sh
+  971  ./food.sh
+  972  nano food.sh
+  973  ./food.sh
+  974  nano 
+  975  chmod while.sh
+  976  chmod 774 while.sh
+  977  ./while.sh
+  978  nano while.sh
+  979  ./while.sh
+  980  nano while.sh
+  981  ./while.sh
+  982  nano while.sh
+  983  ./while.sh
+  984  nano while
+  985  nano while.sh
+  986  ./while.sh
+  987  nano while.sh
+  988  ./while.sh
+  989  nano
+  990  chmod mul.sh
+  991  chmod 774 mul.sh
+  992  ./mul.sh
+  993  nano mul.sh
+  994  ./mul.sh
+  995  nano mul.sh
+  996  chmod 774 mul.sh
+  997  ./mul.sh
+  998  nano mul.sh
+  999  ./mul.sh
+ 1000  clear
+ 1001  nano var.sh
+ 1002  clear
+ 1003  nano reading.sh
+ 1004  nano name.sh
+ 1005  clear
+ 1006  nano name.sh
+ 1007  chmod 774 name.sh
+ 1008  ./name.sh
+ 1009  nano name.sh
+ 1010  nano var.sh
+ 1011  nano read.sh
+ 1012  ssh-add ~/.ssh/id_rsa
+ 1013  ssh-add ~/.ssh/demo_func.sh
+ 1014  nano
+ 1015  chmod 774 colour.sh
+ 1016  ./colour.sh
+ 1017  bash -x ./colour.sh
+ 1018  ansible -h
+ 1019  ansible --version
+ 1020  ssh -agent bash
+ 1021  ssh-agent bash
+ 1022  pwd
+ 1023  ls
+ 1024  python3
+ 1025  clear
+ 1026  python3
+ 1027  pwd
+ 1028  ls
+ 1029  nano yml.sh
+ 1030  clear
+ 1031  pwd
+ 1032  ls
+ 1033  nano yml.sh
+ 1034  chmod 774 yml.sh
+ 1035  ./yml.sh
+ 1036  cat ./yaml.sh
+ 1037  ./yml.sh
+ 1038  cat yml.sh
+ 1039  nano yaml.sh
+ 1040  chmod 774 yaml.sh
+ 1041  ./yaml.sh
+ 1042  nano yml.sh
+ 1043  chmod markup.yml
+ 1044  chmod 774 markup.yml
+ 1045  ./markup.yml
+ 1046  clear
+ 1047  pwd 
+ 1048  ls
+ 1049  nano markup.yml
+ 1050  cat markup.yml
+ 1051  ansible-galaxy -h
+ 1052  ansible-galaxy init --force --offline srilatharole
+ 1053  tree srilatharole/
+ 1054  sudo apt install tree
+ 1055  tree srilathaarole/
+ 1056  cd \srilatharole
+ 1057  ls
+ 1058  pwd
+ 1059  ls
+ 1060  tree srilatharole/
+ 1061  cd /srilatharole
+ 1062  cd \srilatharole
+ 1063  ls
+ 1064  srilatha.yml
+ 1065  nano srilatha.yml
+ 1066  cat srilatha.yml
+ 1067  nano main.yml
+ 1068  cat main.yml
+ 1069  nano main.yml
+ 1070  cat main.yml
+ 1071  sudo ansible-playbook -i hosts srilatha.yml -vvv
+ 1072  cd srilatha-playbook/
+ 1073  cd
+ 1074  cd srilatha-playbook/
+ 1075  cd srilatha-playbook
+ 1076  nano srilatha.yml
+ 1077  cat srilatha.yml
+ 1078  nano srilatha.yml
+ 1079  cat srilatha.yml
+ 1080  sudo ansible-playbook -i hosts srilatha.yml -vvv
+ 1081  ansible-galaxy init srilatharole/
+ 1082  cd srilatha-playbook/
+ 1083  cd srilatha-playbook
+ 1084  mkdir srilatha-playbook/
+ 1085  cd srilatha-playbook/
+ 1086  cd
+ 1087  cd srilatharole/
+ 1088  nano main.yml
+ 1089  nano srilatha.yml
+ 1090  cat srilatha.yml
+ 1091  sudo ansible-playbook -i hosts srilatha.yml -vvv
+ 1092  pwd
+ 1093  ls
+ 1094  cd playbooks
+ 1095  mkdir playbooks
+ 1096  cd playbooks
+ 1097  ls
+ 1098  nano bhanu.yml
+ 1099  cat bhanu.yml
+ 1100  ansible-playbook bhanu.yml
+ 1101  nano bhanu.yml
+ 1102  cat bhanu.yml
+ 1103  ansible-playbook bhanu.yml
+ 1104  nano bhanu.yml
+ 1105  ansible-playbook bhanu.yml
+ 1106  nano bhanu.yml
+ 1107  ansible-playbook bhanu.yml
+ 1108  clear
+ 1109  ls
+ 1110  nano sri.yml
+ 1111  cat sri.yml
+ 1112  ansible-playbook sri.yml
+ 1113  sudo ansible-playbook -i hosts sri.yml -vvv
+ 1114  pwd
+ 1115  ls
+ 1116  mkdir srilatha_playbook
+ 1117  ls
+ 1118  cd srilatha_playbook
+ 1119  nano srilatha_orchestrate.yml
+ 1120  cat srilatha_orchestrate.yml
+ 1121  ansible-galaxy init --force --offline install-tomcat
+ 1122  cd install-tomcat
+ 1123  ls
+ 1124  cd ..
+ 1125  ansible-galaxy init --force --offline install-tomcat
+ 1126  ls
+ 1127  cd start-tomcat
+ 1128  mkdir start-tomcat
+ 1129  cd start-tomcat
+ 1130  ls
+ 1131  cd ..
+ 1132  ls
+ 1133  cd start-tomcat
+ 1134  ls
+ 1135  cd ..
+ 1136  tree install-tomcat
+ 1137  cd install-tomcat
+ 1138  cd tasks
+ 1139  ls
+ 1140  cat main.yml
+ 1141  nano main.yml
+ 1142  ls
+ 1143  cd ..
+ 1144  cd start-tomcat
+ 1145  cd ..
+ 1146  ls
+ 1147  cd start-tomcat
+ 1148  ls
+ 1149  cd tasks
+ 1150  ls
+ 1151  mkdir tasks
+ 1152  cd tasks
+ 1153  ls
+ 1154  cd ..
+ 1155  sudo ansible-playbook -1 hosts srilatha_orchestrate.yml -vvv
+ 1156  cd
+ 1157  mkdir srilatha_playbook
+ 1158  ls
+ 1159  cd srilatha_playbook
+ 1160  sudo ansible-playbook -i hosts srilatha_orchestrate.yml -vvv
+ 1161  nano srilatha_orchestrate
+ 1162  nano srilatha_orchestrate.yml
+ 1163  sudo ansible-playbook -1 hosts srilatha_orchestrate.yml -vvv
+ 1164  sudo ansible-playbook -i hosts srilatha_orchestrate.yml -vvv
+ 1165  nano srilatha_orchestrate.yml
+ 1166  cat srilatha_orchestrate.yml
+ 1167  sudo ansible-playbook -i hosts srilatha_orchestrate.yml -vvv
+ 1168  nano shivaleela_orchestrate.yml
+ 1169  sudo ansible-playbook -i hosts srilatha_orchestrate.yml -vvv
+ 1170  nano srilatha_orchestrate.yml
+ 1171  sudo ansible-playbook -i hosts srilatha_orchestrate.yml -vvv
+ 1172  nano main.yml
+ 1173  cat install-tomcat
+ 1174  cd install-tomcat
+ 1175  cd tasks
+ 1176  ls
+ 1177  nano main.yml
+ 1178  sudo ansible-playbook -i hosts srilatha_orchestrate.yml -vvv
+ 1179  cd ..
+ 1180  sudo ansible-playbook -i hosts srilatha_orchestrate.yml -vvv
+ 1181  nano srilatha_orchestrate.yml
+ 1182  cd install-tomcat
+ 1183  sudo ansible-playbook -i hosts srilatha_orchestrate.yml -vvv
+ 1184  cd ..
+ 1185  sudo ansible-playbook -i hosts srilatha_orchestrate.yml -vvv
+ 1186  cd srilatha_orchestrate.yml
+ 1187  cd srilatha_playbook
+ 1188  sudo ansible-playbook -i hosts srilatha_orchestrate.yml -vvv
+ 1189  hostname
+ 1190  sudo ansible-playbook -i hosts srilatha_orchestrate.yml -vvv
+ 1191  nano main.yml
+ 1192  cd install-tomcat
+ 1193  nano main.yml
+ 1194  cd tasks
+ 1195  ls
+ 1196  nano main.yml
+ 1197  cd ..
+ 1198  cd install-tomcat
+ 1199  cd tasks
+ 1200  nano main.yml
+ 1201  cd ..
+ 1202  sudo ansible-playbook -i hosts srilatha_orchestrate.yml -vvv
+ 1203  cd install-tomcat/tasks
+ 1204  nano main.yml
+ 1205  cd ..
+ 1206  sudo ansible-playbook -i hosts srilatha_orchestrate.yml -vvv
+ 1207  cd install-tomcat/tasks
+ 1208  nano main.yml
+ 1209  cd ..
+ 1210  sudo ansible-playbook -i hosts srilatha_orchestrate.yml -vvv
+ 1211  cd install-tomcat/tasks
+ 1212  nano main.yml
+ 1213  cd ..
+ 1214  sudo ansible-playbook -i hosts srilatha_orchestrate.yml -vvv
+ 1215  cd 
+ 1216  pwd 
+ 1217  ls
+ 1218  sudo useradd mani vani nani lali
+ 1219  pwd
+ 1220  ls
+ 1221  rm Galaxyinfo.txt
+ 1222  ls
+ 1223  rm Galaxyinfo.txt
+ 1224  clear
+ 1225  pwd
+ 1226  ls
+ 1227  mkdir ABC 
+ 1228  sudo username teddybear
+ 1229  sudo username cinema
+ 1230  pwd
+ 1231  ls
+ 1232  sudo useradd leela
+ 1233  sudo useradd imp1
+ 1234  sudo useradd imp2
+ 1235  sudo useradd imp3
+ 1236  sudo useradd imp4
+ 1237  pwd
+ 1238  cat /etc/passwd
+ 1239  su - imp1
+ 1240  su - imp2
+ 1241  su - imp3
+ 1242  su - imp4
+ 1243  sudo adduser imp1
+ 1244  sudo adduser imp11
+ 1245  su - imp11
+ 1246  sudo Galaxyinfo.txt ABCimplex
+ 1247  ls
+ 1248  pwd
+ 1249  ls
+ 1250  nano sri.yml
+ 1251  cd playbook
+ 1252  cd playbooks
+ 1253  nano sri.yml
+ 1254  ansible-playbook sri.yml
+ 1255  cat sri.yml
+ 1256  nano sri.yml
+ 1257  ansible-playbook sri.yml
+ 1258  nano sri.yml
+ 1259  ansible-playbokk sri.yml
+ 1260  ansible-playbook sri.yml
+ 1261  cat sri.yml
+ 1262  sudo ansible-playbook -i hosts sri.yml -vvv
+ 1263  cd shivaleela-playbook/
+ 1264  ls
+ 1265  cd
+ 1266  cd playbooks
+ 1267  mkdir srilatha-playbook
+ 1268  cd srilatha-playbook
+ 1269  cd ..
+ 1270  mkdir Abclmpex
+ 1271  ls
+ 1272  cd abclmpex
+ 1273  mkdir Abclmpex
+ 1274  cd Abclmpex
+ 1275  sudo useradd ram
+ 1276  sudo useradd shiv laxma bhanu
+ 1277  sudo useradd nani shiv
+ 1278  sudo useradd -D [bhanu shiva]
+ 1279  rm Abclmpx
+ 1280  clear
+ 1281  cd
+ 1282  clear
+ 1283  mkdir Abclmpex
+ 1284  cd Abclmpex
+ 1285  sudo useradd Shiv
+ 1286  sudo useradd bhanu
+ 1287  sudo useradd tej
+ 1288  sudo useradd vani
+ 1289  pwd
+ 1290  cat /etc/password
+ 1291  cat /etc/passwd
+ 1292  cd Shiv
+ 1293  cd ..
+ 1294  /home/Shiv
+ 1295  ls
+ 1296  grep Shiv /etc/passwd
+ 1297  su - Shiv
+ 1298  su
+ 1299  ls -al /home/Shiv
+ 1300  sudo mkhomedir_helper Shiv
+ 1301  ls -al /home/Shiv
+ 1302  sudo mkhomedir_helper bhanu
+ 1303  ls -al /home/bhanu
+ 1304  sudo mkhomedir_helper tej
+ 1305  ls -al /home/tej
+ 1306  sudo mkhomedir_helper vani
+ 1307  ls -al /home/vani
+ 1308  cd Shiv
+ 1309  cd bhanu
+ 1310  cd tej
+ 1311  cd ..
+ 1312  cd tej
+ 1313  cd vani
+ 1314  cd bhanu
+ 1315  cd ..
+ 1316  usermod -d /home/data ubuntu
+ 1317  usermod -d /home/data Shiv
+ 1318  /etc/passwd
+ 1319  chmod +u Shiv
+ 1320  chmod +u bhanu
+ 1321  mkdir InitialGalaxy
+ 1322  cd InitialGalaxy
+ 1323  touch Galaxyinfo.txt
+ 1324  nano Galaxyinfo.txt
+ 1325  cat Galaxyinfo.txt
+ 1326  cd
+ 1327  mv Galaxyinfo.txt
+ 1328  mv Galaxyinfo.txt /dir
+ 1329  mv Galaxyinfo.txt dir
+ 1330  mv  Galaxyinfo.txt allcontent.txt
+ 1331  mv allcontent.txt Galaxyinfo.txt
+ 1332  ls
+ 1333  cp allcontent.txt Galaxyinfo.txt
+ 1334  cp Galaxyinfo.txt allcontent.txt
+ 1335  sudo useradd -m -d /home/Shiv
+ 1336  useradd -m
+ 1337  su - shiv
+ 1338  sudo adduser shiv
+ 1339  su - shiv
+ 1340  pwd
+ 1341  ls
+ 1342  sudo adduser timjag
+ 1343  clear
+ 1344  pwd
+ 1345  ls
+ 1346  sudo adduser timJag
+ 1347  clear
+ 1348  pwd
+ 1349  ls
+ 1350  sudo adduser Timjag
+ 1351  clear
+ 1352  pwd
+ 1353  ls
+ 1354  sudo adduser timjagg
+ 1355  su - jogdir
+ 1356  su - timjagg
+ 1357  pwd
+ 1358  ls
+ 1359  sudo adduser timjag
+ 1360  su - timjag
+ 1361  pwd
+ 1362  ls
+ 1363  nano args.sh
+ 1364  chmod 774 args.sh
+ 1365  ./args.sh
+ 1366  nano args.sh
+ 1367  ./args.sh
+ 1368  nano args.sh
+ 1369  ./args.sh
+ 1370  nano args.sh
+ 1371  ./args.sh
+ 1372  nano args.sh
+ 1373  ./args.sh
+ 1374  nano args.sh
+ 1375  ./args.sh
+ 1376  /args.nano args.sh
+ 1377  nano args.sh
+ 1378  ./args.sh
+ 1379  nano args.sh
+ 1380  ./args.sh
+ 1381  nano args.sh
+ 1382  ./args.sh
+ 1383  nano args.sh
+ 1384  ./args.sh
+ 1385  nano args.sh
+ 1386  ./args.sh
+ 1387  nano args.sh
+ 1388  ./args.sh
+ 1389  nano args.sh
+ 1390  nano arg.sh
+ 1391  chmod 774 arg.sh
+ 1392  ./arg.sh
+ 1393  nano arg.sh
+ 1394  ./arg.sh
+ 1395  nano input.sh
+ 1396  chmod 774 input.sh
+ 1397  ./input.sh
+ 1398  nano input.sh
+ 1399  ./input.sh
+ 1400  ./args.sh
+ 1401  cat args.sh
+ 1402  nano args.sh
+ 1403  ./args.sh
+ 1404  nano args.sh
+ 1405  ./args.sh
+ 1406  pwd
+ 1407  ls
+ 1408  nano args.sh
+ 1409  chmod 774 args.sh
+ 1410  ./args.sh
+ 1411  nano input.sh
+ 1412  chmod 774 input.sh
+ 1413  ./input.sh
+ 1414  ./input.sh bhanu welcome sir
+ 1415  cat input.sh
+ 1416  nano ifelse.sh
+ 1417  chmod 774 ifelse.sh
+ 1418  ./ifelse.sh
+ 1419  nano ifelse.sh
+ 1420  ./ifelse.sh
+ 1421  nano ifelse.sh
+ 1422  ./ifelse.sh
+ 1423  nano ifelse.sh
+ 1424  ./ifelse.sh
+ 1425  nano ifelse.sh
+ 1426  ./ifelse.sh
+ 1427  nano ifelse.sh
+ 1428  ./ifelse.sh
+ 1429  nano ifelse.sh
+ 1430  ./ifelse.sh
+ 1431  cat ifelse.sh
+ 1432  sudo adduser bhanu
+ 1433  sudo adduser gayathri
+ 1434  su - gayathri
+ 1435  sudo usermod -aG sudo gayathri
+ 1436  su - gayathri
+ 1437  sudo groupadd devops
+ 1438  cat /etc/group
+ 1439  mkdir bootcamp
+ 1440  cd bootcamp
+ 1441  sudo cp allperms bootcamp
+ 1442  sudo cp allperms.txt bootcp
+ 1443  cd
+ 1444  sudo cp allperms.txt bootcamp
+ 1445  sl
+ 1446  sudo apt install sl
+ 1447  sudo usermod -aG
+ 1448  sudo groupadd devops
+ 1449  su - gayathri
+ 1450  pwd
+ 1451  ls
+ 1452  nano arg.sh
+ 1453  chmod 774 arg.sh
+ 1454  ./arg.sh
+ 1455  ./arg.sh 47 30 16
+ 1456  cat arg.sh
+ 1457  nano input.sh
+ 1458  chmod 774 input.sh
+ 1459  ./input.sh
+ 1460  ./input.sh bhanu welcome vani
+ 1461  nano ifelse.sh
+ 1462  chmod 774 ifelse.sh
+ 1463  ./ifelse.sh
+ 1464  cat ifelse.sh
+ 1465  sudo adduser ust
+ 1466  sudo adduser shiva
+ 1467  su - shiva
+ 1468  sudo usermod -aG sudo shiva
+ 1469  su - shiva
+ 1470  docker --version
+ 1471  docker image history redis
+ 1472  docker images
+ 1473  docker image build -t linkextractor:step1
+ 1474  git chechout step1
+ 1475  docker --version
+ 1476  sudo apt-get update
+ 1477  sudo apt-get install git
+ 1478  git --version
+ 1479  git config --global user.name"12345shivaleela"
+ 1480  git config --global user.name
+ 1481  git config user.name "12345shivaleela"
+ 1482  git config --global user.email"shivaleela922@gmail.com"
+ 1483  cd Hashmum
+ 1484  cd
+ 1485  pwd
+ 1486  mkdir Hushmum
+ 1487  pwd
+ 1488  cd
+ 1489  cd Hushmun
+ 1490  ls
+ 1491  cd Hushmum
+ 1492  sudo useradd shiv
+ 1493  sudo useradd user1
+ 1494  sudo useradd user2
+ 1495  cat  /etc/passwd
+ 1496  su - user1
+ 1497  su - user2
+ 1498  pwd
+ 1499  clear
+ 1500  cd ..
+ 1501  clear
+ 1502  mkdir hashmum
+ 1503  cd hushmum
+ 1504  pwd
+ 1505  ls
+ 1506  cd hushmum
+ 1507  pwd
+ 1508  ls
+ 1509  mkdir HUSHMUM
+ 1510  cd HUSHMUM
+ 1511  sudo adduser devops
+ 1512  sudo adduser docker
+ 1513  sudo adduser github
+ 1514  sudo adduser dockerhub
+ 1515  su - github
+ 1516  history
+ 1517  history > files.txt
+  518  nano allcontent.txt
+  519  echo "shivaleela" > focus.txt
+  520  cat focus.txt
+  521  echo "bhanu" > myfile.txt
+  522  cat myfile.txt
+  523  ls
+  524  rm  focus.txt
+  525  ls
+  526  find myfile.txt
+  527  find allcontent.txt
+  528  find . -type d -name "t*"
+  529  find . -name myfile.txt -delete
+  530  ls
+  531  free
+  532  uptime
+  533  mkdir bhanu
+  534  ls
+  535  touch myfile.txt
+  536  ls
+  537  cat myfile.txt
+  538  ls
+  539  echo "sunny" > emptyfile.txt
+  540  cat emptyfile.txt
+  541  echo "pandu" > content.txt
+  542  cat content.txt
+  543  echo "nani" > file.txt
+  544  cat file.txt
+  545  ls -l
+  546  file
+  547  pwd
+  548  ls
+  549  file myfile.txt
+  550  file content.txt
+  551  pwd
+  552  ls
+  553  nano allcontent.txt
+  554  pwd
+  555  ls
+  556  nano alpha.txt
+  557  cat alpha.txt
+  558  pwd
+  559  rm gama.txt
+  560  rm beta.txt
+  561  rm alpha.txt
+  562  clear
+  563  pwd 
+  564  ls 
+  565  mkdir shivaleela
+  566  cd shivaleela
+  567  echo "trainee" > gama.txt
+  568  echo "mom" > alpha.txt
+  569  echo "power" > beta.txt
+  570  cd
+  571  file 
+  572  clear
+  573  rm gama.txt
+  574  ls
+  575  pwd
+  576  ls
+  577  rm gama.txt
+  578  rm alpha.txt
+  579  rm beta.txt
+  580  ls
+  581  clear
+  582  pwd ls
+  583  clear
+  584  pwd
+  585  ls
+  586  mkdir shiv
+  587  ls
+  588  echo "trainee" > alpha.txt
+  589  cat alpha.txt
+  590  echo "power" > gama.txt
+  591  cat gama.txt
+  592  echo "happy" > beta.txt
+  593  cat beta.txt
+  594  ls
+  595  chmod -w content.txt
+  596  ls
+  597  file gama.txt
+  598  ls -il
+  599  ls -l
+  600  nano allcontent.txt
+  601  ls
+  602  rm file.txt
+  603  rm beta.txt
+  604  ls
+  605  find allcontent.txt
+  606  cat *.txt
+  607  find . -type f -name "*.txt"
+  608  find . -type d -name "t*"
+  609  find . -name gama.txt -delete
+  610  ls
+  611  free
+  612  uptime
+  613  nano alpha.txt
+  614  cat alpha.txt
+  615  mkdir mom
+  616  cd 
+  617  cd mom
+  618  cd
+  619  pwd
+  620  ls
+  621  mkdir trainee
+  622  cd trainee
+  623  echo "mom" > gama.txt
+  624  echo "sri" > alpha.txt
+  625  echo "mani" > beta.txt
+  626  ls
+  627  cd
+  628  chmod -w content.txt
+  629  file allcontent.txt
+  630  ls -il
+  631  ls -l
+  632  nano beta.txt
+  633  cat beta.txt
+  634  rm gama.txt
+  635  rm alpha.txt
+  636  rm 
+  637  ls
+  638  rm emptyfile.txt
+  639  ls
+  640  find allcontent.txt
+  641  cat *.txt
+  642  find . -type d -name "*t"
+  643  ls
+  644  find . -name file.txt -delete
+  645  ls
+  646  free
+  647  uptime
+  648  pwd
+  649  ls
+  650  mkdir linux
+  651  cd linux
+  652  sudo apt update
+  653  sudo apt install software-properties-common
+  654  sudo add-apt-repository --yes --update ppa:ansible/ansible
+  655  sudo apt install ansible
+  656  python3
+  657  clear
+  658  python3
+  659  pwd
+  660  ls
+  661  touch multicontent.txt
+  662  ls
+  663  chmod +r multicontent.txt
+  664  chmod -w multicontent.txt
+  665  ls -lh multicontent.txt
+  666  mount
+  667  mount -t multicontent.txt
+  668  ls
+  669  man mount
+  670  mount -o options device_name direct
+  671  man service
+  672  service
+  673  service --status-all
+  674  python3
+  675  ansible --version
+  676  sudo apt install python3-argcomplete
+  677  ansible
+  678  pwd
+  679  ls
+  680  cd /etc/ansible
+  681  ls
+  682  cat hosts
+  683  cd roles
+  684  ls
+  685  ls -a
+  686  sudo nano hosts
+  687  cd ..
+  688  sudo nano hosts
+  689  pwd
+  690  ls
+  691  chmod +r beta.txt
+  692  chmod -w beta.txt
+  693  ls -lh
+  694  touch multicontent.txt
+  695  ls
+  696  service
+  697  service --status-all
+  698  man service
+  699  /etc/init.d
+  700  service /etc/init.d
+  701  cd /etc/init.d
+  702  ls
+  703  sudo service cron start
+  704  sudo service cron stop
+  705  service ls
+  706  cd ..
+  707  cd
+  708  sudo apt update
+  709  sudo apt install software-properties-common
+  710  sudo add-apt-repository --yes --update ppa:ansible/ansible
+  711  sudo apt install ansible
+  712  ansible --version
+  713  ansible all -m ping --ask-pass
+  714  ansible -m ping --ask-pass
+  715  sudo apt install python3-argcomplete
+  716  ansible all -m ping --ask-all
+  717  sudo apt install python3-argcomplete
+  718  top
+  719  free
+  720  ps
+  721  df
+  722  pwd
+  723  ls
+  724  echo "iam shivaleela" > myinfo.txt
+  725  cat myinfo.txt
+  726  chmod +r myinfo.txt
+  727  chmod +w myinfo.txt
+  728  ls -hl myinfo.txt
+  729  ls
+  730  pwd 
+  731  ls
+  732  rm myinfo.txt
+  733  ls
+  734  clear
+  735  pwd 
+  736  ls
+  737  echo "bhanu" > myinfo.txt
+  738  ls
+  739  chmod +r myinfo.txt
+  740  ls -hl myinfo.txt
+  741  chmod +w myinfo.txt
+  742  ls -hl
+  743  ls -hl myinfo.txt
+  744  cat myinfo.txt
+  745  shell
+  746  SHELL
+  747  echo SHELL
+  748  echo $SHELL
+  749  #!/bin/bash
+  750  echo hello team
+  751  nano
+  752  ./myinfo.txt
+  753  cat myinfo.txt
+  754  chmod +x myinfo.txt
+  755  ./myinfo.txt
+  756  echo "team" > self.sh
+  757  ls -l self.txt
+  758  ls -l self.sh
+  759  chmod +x self.sh
+  760  ls -hl self.sh
+  761  ./self.sh
+  762  cat self.sh
+  763  nano
+  764  chmod +x myshell.sh
+  765  ./myshell.sh
+  766  nano myshell.sh
+  767  ./myshell.txt
+  768  ./myshell.sh
+  769  touch myfile
+  770  ls
+  771  nano myfile
+  772  ls
+  773  chmod +x myfile
+  774  ./myfile
+  775  nano
+  776  nano myscript.txt
+  777  chmod +x mycommands.sh
+  778  ./mycommands.sh
+  779  pwd
+  780  touch bash_aliases
+  781  nano .bash_aliases
+  782  ./dir
+  783  dir
+  784  chmod +x reading.sh
+  785  touch reading.sh
+  786  ls
+  787  chmod +x reading.sh
+  788  ./reading.sh
+  789  nano reading.sh
+  790  ./reading.sh
+  791  nano reading.sh
+  792  ./reading.sh
+  793  clear
+  794  pwd 
+  795  ls
+  796  nano
+  797  n
+  798  ls -l examplereading.sh
+  799  chmod 774 examplereading.sh
+  800  ./exaplereading.sh
+  801  ./examplereading.sh
+  802  rm reading.sh
+  803  ls
+  804  nano reading.sh
+  805  ./exampleread.sh
+  806  chmod 774 exampleread.sh
+  807  ./exampleread.sh
+  808  nano
+  809  ./teddybear.sh
+  810  chmod 774 teddybear.sh
+  811  ./teddybear.sh
+  812  touch bash_alias
+  813  nano .bash_alias
+  814  ./.bash_alias
+  815  chmod 774 .bash_alias
+  816  ./.bash_alias
+  817  ./bash_alias
+  818  chmod 774 bash_alias
+  819  ./bash_alias
+  820  touch bash_aliases
+  821  nano bash_aliases
+  822  ./examplereading.sh
+  823  nano bash_aliases
+  824  ./example.sh
+  825  chmod 774 example.sh
+  826  ./example.sh
+  827  ll
+  828  nano .bash_aliases
+  829  rm bash_aliases
+  830  ls
+  831  rm examplereading.sh
+  832  ls
+  833  clear
+  834  touch bash_aliases
+  835  nano .bash_aliases
+  836  ls -l
+  837  ls -a
+  838  ls -h
+  839  ll
+  840  la
+  841  lp
+  842  clear
+  843  touch bash_aliases
+  844  nano .bash_aliases
+  845  ./bash_aliases.sh
+  846  ./.bash_aliases.sh
+  847  rm bash_aliases
+  848  ls
+  849  clear
+  850  touch bash_aliases
+  851  clear
+  852  touch .bash_aliases
+  853  nano .bash_aliases
+  854  ./bash_alias.sh
+  855  nano .bash_aliases
+  856  ./bash_aliases.sh
+  857  chmod 774 bash_aliases.sh
+  858  ./bash_aliases.sh
+  859  ll
+  860  la
+  861  li
+  862  lp
+  863  nano .bash_aliases
+  864  rm bash_aliases.sh
+  865  ls
+  866  clear
+  867  touch bash_aliases
+  868  nano .bash_aliases
+  869  ll
+  870  la
+  871  lp
+  872  ll
+  873  cat .bash_aliases
+  874  ll
+  875  nano bhanu.txt
+  876  nano helloscript.sh
+  877  chmod 774 helloscript.sh
+  878  ./helloscript.sh
+  879  ./helloscript.sh 10 20 30 40 50 60 70 80 90
+  880  ./helloscript.sh 206281 shiva leela bhanu hyderabad ts ust 922 sandy nani
+  881  nano decision.sh
+  882  cat mango.sh
+  883  chmod 774 mango.sh
+  884  ./mango.sh
+  885  nano mango.sh
+  886  chmod 774 fruits.sh
+  887  ./fruits.sh
+  888  ./hello.script
+  889  nano helloscript.sh
+  890  nano fruits.sh
+  891  nano
+  892  chmod 774 forloop.sh
+  893  ./forloop.sh
+  894  nano
+  895  chmod 774 whiledemo.sh
+  896  ./whiledemo.sh
+  897  nano whiledemo.sh
+  898  chmod 774 whileloop.sh
+  899  ./whileloop.sh
+  900  pwd
+  901  ls
+  902  nano
+  903  chmod 774 shiv.sh
+  904  ./shiv.sh
+  905  nano shi.sh
+  906  ./shiv.sh
+  907  nano shiv.sh
+  908  ./shiv.sh
+  909  nano
+  910  nano var.sh
+  911  chmod var.sh
+  912  clear
+  913  nano var.sh
+  914  chmod 774.sh
+  915  clear
+  916  nano var.sh
+  917  chmod 774 var.sh
+  918  ./var.sh
+  919  nano var.sh
+  920  ./var.sh
+  921  echo $SHELL
+  922  ./var.sh
+  923  nano 
+  924  chmod 774 name.sh
+  925  ./name.sh
+  926  nano name.sh
+  927  ./name.sh
+  928  nano reading.sh
+  929  clear
+  930  nano reading.sh
+  931  chmod 774 reading.sh
+  932  ./reading.sh
+  933  nano var.sh
+  934  chmod var.sh
+  935  chmod 774 var.sh
+  936  ./var.sh
+  937  nano
+  938  chmod file.sh
+  939  chmod 774 file.sh
+  940  ./file.sh
+  941  nano file.sh
+  942  ./file.sh
+  943  clear
+  944  nano reading.sh
+  945  chmod 774 reading.sh
+  946  ./reading.sh
+  947  nano file.sh
+  948  chmod 774 file.sh
+  949  ./file.sh
+  950  nano loop.sh
+  951  chmod 774 loop.sh
+  952  ./loop.sh
+  953  nano loop.sh
+  954  ./loop.sh
+  955  nano loop.sh
+  956  ./loop.sh
+  957  nano loop.sh
+  958  ./loop.sh
+  959  nano loop.sh
+  960  ./loop.sh
+  961  nano loop.sh
+  962  ./loop.sh
+  963  nano loop.sh
+  964  ./loop.sh
+  965  nano loop.sh
+  966  ./loop.sh
+  967  nano loop.sh
+  968  ./loop.sh
+  969  nano food.sh
+  970  chmod 774 food.sh
+  971  ./food.sh
+  972  nano food.sh
+  973  ./food.sh
+  974  nano 
+  975  chmod while.sh
+  976  chmod 774 while.sh
+  977  ./while.sh
+  978  nano while.sh
+  979  ./while.sh
+  980  nano while.sh
+  981  ./while.sh
+  982  nano while.sh
+  983  ./while.sh
+  984  nano while
+  985  nano while.sh
+  986  ./while.sh
+  987  nano while.sh
+  988  ./while.sh
+  989  nano
+  990  chmod mul.sh
+  991  chmod 774 mul.sh
+  992  ./mul.sh
+  993  nano mul.sh
+  994  ./mul.sh
+  995  nano mul.sh
+  996  chmod 774 mul.sh
+  997  ./mul.sh
+  998  nano mul.sh
+  999  ./mul.sh
+ 1000  clear
+ 1001  nano var.sh
+ 1002  clear
+ 1003  nano reading.sh
+ 1004  nano name.sh
+ 1005  clear
+ 1006  nano name.sh
+ 1007  chmod 774 name.sh
+ 1008  ./name.sh
+ 1009  nano name.sh
+ 1010  nano var.sh
+ 1011  nano read.sh
+ 1012  ssh-add ~/.ssh/id_rsa
+ 1013  ssh-add ~/.ssh/demo_func.sh
+ 1014  nano
+ 1015  chmod 774 colour.sh
+ 1016  ./colour.sh
+ 1017  bash -x ./colour.sh
+ 1018  ansible -h
+ 1019  ansible --version
+ 1020  ssh -agent bash
+ 1021  ssh-agent bash
+ 1022  pwd
+ 1023  ls
+ 1024  python3
+ 1025  clear
+ 1026  python3
+ 1027  pwd
+ 1028  ls
+ 1029  nano yml.sh
+ 1030  clear
+ 1031  pwd
+ 1032  ls
+ 1033  nano yml.sh
+ 1034  chmod 774 yml.sh
+ 1035  ./yml.sh
+ 1036  cat ./yaml.sh
+ 1037  ./yml.sh
+ 1038  cat yml.sh
+ 1039  nano yaml.sh
+ 1040  chmod 774 yaml.sh
+ 1041  ./yaml.sh
+ 1042  nano yml.sh
+ 1043  chmod markup.yml
+ 1044  chmod 774 markup.yml
+ 1045  ./markup.yml
+ 1046  clear
+ 1047  pwd 
+ 1048  ls
+ 1049  nano markup.yml
+ 1050  cat markup.yml
+ 1051  ansible-galaxy -h
+ 1052  ansible-galaxy init --force --offline srilatharole
+ 1053  tree srilatharole/
+ 1054  sudo apt install tree
+ 1055  tree srilathaarole/
+ 1056  cd \srilatharole
+ 1057  ls
+ 1058  pwd
+ 1059  ls
+ 1060  tree srilatharole/
+ 1061  cd /srilatharole
+ 1062  cd \srilatharole
+ 1063  ls
+ 1064  srilatha.yml
+ 1065  nano srilatha.yml
+ 1066  cat srilatha.yml
+ 1067  nano main.yml
+ 1068  cat main.yml
+ 1069  nano main.yml
+ 1070  cat main.yml
+ 1071  sudo ansible-playbook -i hosts srilatha.yml -vvv
+ 1072  cd srilatha-playbook/
+ 1073  cd
+ 1074  cd srilatha-playbook/
+ 1075  cd srilatha-playbook
+ 1076  nano srilatha.yml
+ 1077  cat srilatha.yml
+ 1078  nano srilatha.yml
+ 1079  cat srilatha.yml
+ 1080  sudo ansible-playbook -i hosts srilatha.yml -vvv
+ 1081  ansible-galaxy init srilatharole/
+ 1082  cd srilatha-playbook/
+ 1083  cd srilatha-playbook
+ 1084  mkdir srilatha-playbook/
+ 1085  cd srilatha-playbook/
+ 1086  cd
+ 1087  cd srilatharole/
+ 1088  nano main.yml
+ 1089  nano srilatha.yml
+ 1090  cat srilatha.yml
+ 1091  sudo ansible-playbook -i hosts srilatha.yml -vvv
+ 1092  pwd
+ 1093  ls
+ 1094  cd playbooks
+ 1095  mkdir playbooks
+ 1096  cd playbooks
+ 1097  ls
+ 1098  nano bhanu.yml
+ 1099  cat bhanu.yml
+ 1100  ansible-playbook bhanu.yml
+ 1101  nano bhanu.yml
+ 1102  cat bhanu.yml
+ 1103  ansible-playbook bhanu.yml
+ 1104  nano bhanu.yml
+ 1105  ansible-playbook bhanu.yml
+ 1106  nano bhanu.yml
+ 1107  ansible-playbook bhanu.yml
+ 1108  clear
+ 1109  ls
+ 1110  nano sri.yml
+ 1111  cat sri.yml
+ 1112  ansible-playbook sri.yml
+ 1113  sudo ansible-playbook -i hosts sri.yml -vvv
+ 1114  pwd
+ 1115  ls
+ 1116  mkdir srilatha_playbook
+ 1117  ls
+ 1118  cd srilatha_playbook
+ 1119  nano srilatha_orchestrate.yml
+ 1120  cat srilatha_orchestrate.yml
+ 1121  ansible-galaxy init --force --offline install-tomcat
+ 1122  cd install-tomcat
+ 1123  ls
+ 1124  cd ..
+ 1125  ansible-galaxy init --force --offline install-tomcat
+ 1126  ls
+ 1127  cd start-tomcat
+ 1128  mkdir start-tomcat
+ 1129  cd start-tomcat
+ 1130  ls
+ 1131  cd ..
+ 1132  ls
+ 1133  cd start-tomcat
+ 1134  ls
+ 1135  cd ..
+ 1136  tree install-tomcat
+ 1137  cd install-tomcat
+ 1138  cd tasks
+ 1139  ls
+ 1140  cat main.yml
+ 1141  nano main.yml
+ 1142  ls
+ 1143  cd ..
+ 1144  cd start-tomcat
+ 1145  cd ..
+ 1146  ls
+ 1147  cd start-tomcat
+ 1148  ls
+ 1149  cd tasks
+ 1150  ls
+ 1151  mkdir tasks
+ 1152  cd tasks
+ 1153  ls
+ 1154  cd ..
+ 1155  sudo ansible-playbook -1 hosts srilatha_orchestrate.yml -vvv
+ 1156  cd
+ 1157  mkdir srilatha_playbook
+ 1158  ls
+ 1159  cd srilatha_playbook
+ 1160  sudo ansible-playbook -i hosts srilatha_orchestrate.yml -vvv
+ 1161  nano srilatha_orchestrate
+ 1162  nano srilatha_orchestrate.yml
+ 1163  sudo ansible-playbook -1 hosts srilatha_orchestrate.yml -vvv
+ 1164  sudo ansible-playbook -i hosts srilatha_orchestrate.yml -vvv
+ 1165  nano srilatha_orchestrate.yml
+ 1166  cat srilatha_orchestrate.yml
+ 1167  sudo ansible-playbook -i hosts srilatha_orchestrate.yml -vvv
+ 1168  nano shivaleela_orchestrate.yml
+ 1169  sudo ansible-playbook -i hosts srilatha_orchestrate.yml -vvv
+ 1170  nano srilatha_orchestrate.yml
+ 1171  sudo ansible-playbook -i hosts srilatha_orchestrate.yml -vvv
+ 1172  nano main.yml
+ 1173  cat install-tomcat
+ 1174  cd install-tomcat
+ 1175  cd tasks
+ 1176  ls
+ 1177  nano main.yml
+ 1178  sudo ansible-playbook -i hosts srilatha_orchestrate.yml -vvv
+ 1179  cd ..
+ 1180  sudo ansible-playbook -i hosts srilatha_orchestrate.yml -vvv
+ 1181  nano srilatha_orchestrate.yml
+ 1182  cd install-tomcat
+ 1183  sudo ansible-playbook -i hosts srilatha_orchestrate.yml -vvv
+ 1184  cd ..
+ 1185  sudo ansible-playbook -i hosts srilatha_orchestrate.yml -vvv
+ 1186  cd srilatha_orchestrate.yml
+ 1187  cd srilatha_playbook
+ 1188  sudo ansible-playbook -i hosts srilatha_orchestrate.yml -vvv
+ 1189  hostname
+ 1190  sudo ansible-playbook -i hosts srilatha_orchestrate.yml -vvv
+ 1191  nano main.yml
+ 1192  cd install-tomcat
+ 1193  nano main.yml
+ 1194  cd tasks
+ 1195  ls
+ 1196  nano main.yml
+ 1197  cd ..
+ 1198  cd install-tomcat
+ 1199  cd tasks
+ 1200  nano main.yml
+ 1201  cd ..
+ 1202  sudo ansible-playbook -i hosts srilatha_orchestrate.yml -vvv
+ 1203  cd install-tomcat/tasks
+ 1204  nano main.yml
+ 1205  cd ..
+ 1206  sudo ansible-playbook -i hosts srilatha_orchestrate.yml -vvv
+ 1207  cd install-tomcat/tasks
+ 1208  nano main.yml
+ 1209  cd ..
+ 1210  sudo ansible-playbook -i hosts srilatha_orchestrate.yml -vvv
+ 1211  cd install-tomcat/tasks
+ 1212  nano main.yml
+ 1213  cd ..
+ 1214  sudo ansible-playbook -i hosts srilatha_orchestrate.yml -vvv
+ 1215  cd 
+ 1216  pwd 
+ 1217  ls
+ 1218  sudo useradd mani vani nani lali
+ 1219  pwd
+ 1220  ls
+ 1221  rm Galaxyinfo.txt
+ 1222  ls
+ 1223  rm Galaxyinfo.txt
+ 1224  clear
+ 1225  pwd
+ 1226  ls
+ 1227  mkdir ABC 
+ 1228  sudo username teddybear
+ 1229  sudo username cinema
+ 1230  pwd
+ 1231  ls
+ 1232  sudo useradd leela
+ 1233  sudo useradd imp1
+ 1234  sudo useradd imp2
+ 1235  sudo useradd imp3
+ 1236  sudo useradd imp4
+ 1237  pwd
+ 1238  cat /etc/passwd
+ 1239  su - imp1
+ 1240  su - imp2
+ 1241  su - imp3
+ 1242  su - imp4
+ 1243  sudo adduser imp1
+ 1244  sudo adduser imp11
+ 1245  su - imp11
+ 1246  sudo Galaxyinfo.txt ABCimplex
+ 1247  ls
+ 1248  pwd
+ 1249  ls
+ 1250  nano sri.yml
+ 1251  cd playbook
+ 1252  cd playbooks
+ 1253  nano sri.yml
+ 1254  ansible-playbook sri.yml
+ 1255  cat sri.yml
+ 1256  nano sri.yml
+ 1257  ansible-playbook sri.yml
+ 1258  nano sri.yml
+ 1259  ansible-playbokk sri.yml
+ 1260  ansible-playbook sri.yml
+ 1261  cat sri.yml
+ 1262  sudo ansible-playbook -i hosts sri.yml -vvv
+ 1263  cd shivaleela-playbook/
+ 1264  ls
+ 1265  cd
+ 1266  cd playbooks
+ 1267  mkdir srilatha-playbook
+ 1268  cd srilatha-playbook
+ 1269  cd ..
+ 1270  mkdir Abclmpex
+ 1271  ls
+ 1272  cd abclmpex
+ 1273  mkdir Abclmpex
+ 1274  cd Abclmpex
+ 1275  sudo useradd ram
+ 1276  sudo useradd shiv laxma bhanu
+ 1277  sudo useradd nani shiv
+ 1278  sudo useradd -D [bhanu shiva]
+ 1279  rm Abclmpx
+ 1280  clear
+ 1281  cd
+ 1282  clear
+ 1283  mkdir Abclmpex
+ 1284  cd Abclmpex
+ 1285  sudo useradd Shiv
+ 1286  sudo useradd bhanu
+ 1287  sudo useradd tej
+ 1288  sudo useradd vani
+ 1289  pwd
+ 1290  cat /etc/password
+ 1291  cat /etc/passwd
+ 1292  cd Shiv
+ 1293  cd ..
+ 1294  /home/Shiv
+ 1295  ls
+ 1296  grep Shiv /etc/passwd
+ 1297  su - Shiv
+ 1298  su
+ 1299  ls -al /home/Shiv
+ 1300  sudo mkhomedir_helper Shiv
+ 1301  ls -al /home/Shiv
+ 1302  sudo mkhomedir_helper bhanu
+ 1303  ls -al /home/bhanu
+ 1304  sudo mkhomedir_helper tej
+ 1305  ls -al /home/tej
+ 1306  sudo mkhomedir_helper vani
+ 1307  ls -al /home/vani
+ 1308  cd Shiv
+ 1309  cd bhanu
+ 1310  cd tej
+ 1311  cd ..
+ 1312  cd tej
+ 1313  cd vani
+ 1314  cd bhanu
+ 1315  cd ..
+ 1316  usermod -d /home/data ubuntu
+ 1317  usermod -d /home/data Shiv
+ 1318  /etc/passwd
+ 1319  chmod +u Shiv
+ 1320  chmod +u bhanu
+ 1321  mkdir InitialGalaxy
+ 1322  cd InitialGalaxy
+ 1323  touch Galaxyinfo.txt
+ 1324  nano Galaxyinfo.txt
+ 1325  cat Galaxyinfo.txt
+ 1326  cd
+ 1327  mv Galaxyinfo.txt
+ 1328  mv Galaxyinfo.txt /dir
+ 1329  mv Galaxyinfo.txt dir
+ 1330  mv  Galaxyinfo.txt allcontent.txt
+ 1331  mv allcontent.txt Galaxyinfo.txt
+ 1332  ls
+ 1333  cp allcontent.txt Galaxyinfo.txt
+ 1334  cp Galaxyinfo.txt allcontent.txt
+ 1335  sudo useradd -m -d /home/Shiv
+ 1336  useradd -m
+ 1337  su - shiv
+ 1338  sudo adduser shiv
+ 1339  su - shiv
+ 1340  pwd
+ 1341  ls
+ 1342  sudo adduser timjag
+ 1343  clear
+ 1344  pwd
+ 1345  ls
+ 1346  sudo adduser timJag
+ 1347  clear
+ 1348  pwd
+ 1349  ls
+ 1350  sudo adduser Timjag
+ 1351  clear
+ 1352  pwd
+ 1353  ls
+ 1354  sudo adduser timjagg
+ 1355  su - jogdir
+ 1356  su - timjagg
+ 1357  pwd
+ 1358  ls
+ 1359  sudo adduser timjag
+ 1360  su - timjag
+ 1361  pwd
+ 1362  ls
+ 1363  nano args.sh
+ 1364  chmod 774 args.sh
+ 1365  ./args.sh
+ 1366  nano args.sh
+ 1367  ./args.sh
+ 1368  nano args.sh
+ 1369  ./args.sh
+ 1370  nano args.sh
+ 1371  ./args.sh
+ 1372  nano args.sh
+ 1373  ./args.sh
+ 1374  nano args.sh
+ 1375  ./args.sh
+ 1376  /args.nano args.sh
+ 1377  nano args.sh
+ 1378  ./args.sh
+ 1379  nano args.sh
+ 1380  ./args.sh
+ 1381  nano args.sh
+ 1382  ./args.sh
+ 1383  nano args.sh
+ 1384  ./args.sh
+ 1385  nano args.sh
+ 1386  ./args.sh
+ 1387  nano args.sh
+ 1388  ./args.sh
+ 1389  nano args.sh
+ 1390  nano arg.sh
+ 1391  chmod 774 arg.sh
+ 1392  ./arg.sh
+ 1393  nano arg.sh
+ 1394  ./arg.sh
+ 1395  nano input.sh
+ 1396  chmod 774 input.sh
+ 1397  ./input.sh
+ 1398  nano input.sh
+ 1399  ./input.sh
+ 1400  ./args.sh
+ 1401  cat args.sh
+ 1402  nano args.sh
+ 1403  ./args.sh
+ 1404  nano args.sh
+ 1405  ./args.sh
+ 1406  pwd
+ 1407  ls
+ 1408  nano args.sh
+ 1409  chmod 774 args.sh
+ 1410  ./args.sh
+ 1411  nano input.sh
+ 1412  chmod 774 input.sh
+ 1413  ./input.sh
+ 1414  ./input.sh bhanu welcome sir
+ 1415  cat input.sh
+ 1416  nano ifelse.sh
+ 1417  chmod 774 ifelse.sh
+ 1418  ./ifelse.sh
+ 1419  nano ifelse.sh
+ 1420  ./ifelse.sh
+ 1421  nano ifelse.sh
+ 1422  ./ifelse.sh
+ 1423  nano ifelse.sh
+ 1424  ./ifelse.sh
+ 1425  nano ifelse.sh
+ 1426  ./ifelse.sh
+ 1427  nano ifelse.sh
+ 1428  ./ifelse.sh
+ 1429  nano ifelse.sh
+ 1430  ./ifelse.sh
+ 1431  cat ifelse.sh
+ 1432  sudo adduser bhanu
+ 1433  sudo adduser gayathri
+ 1434  su - gayathri
+ 1435  sudo usermod -aG sudo gayathri
+ 1436  su - gayathri
+ 1437  sudo groupadd devops
+ 1438  cat /etc/group
+ 1439  mkdir bootcamp
+ 1440  cd bootcamp
+ 1441  sudo cp allperms bootcamp
+ 1442  sudo cp allperms.txt bootcp
+ 1443  cd
+ 1444  sudo cp allperms.txt bootcamp
+ 1445  sl
+ 1446  sudo apt install sl
+ 1447  sudo usermod -aG
+ 1448  sudo groupadd devops
+ 1449  su - gayathri
+ 1450  pwd
+ 1451  ls
+ 1452  nano arg.sh
+ 1453  chmod 774 arg.sh
+ 1454  ./arg.sh
+ 1455  ./arg.sh 47 30 16
+ 1456  cat arg.sh
+ 1457  nano input.sh
+ 1458  chmod 774 input.sh
+ 1459  ./input.sh
+ 1460  ./input.sh bhanu welcome vani
+ 1461  nano ifelse.sh
+ 1462  chmod 774 ifelse.sh
+ 1463  ./ifelse.sh
+ 1464  cat ifelse.sh
+ 1465  sudo adduser ust
+ 1466  sudo adduser shiva
+ 1467  su - shiva
+ 1468  sudo usermod -aG sudo shiva
+ 1469  su - shiva
+ 1470  docker --version
+ 1471  docker image history redis
+ 1472  docker images
+ 1473  docker image build -t linkextractor:step1
+ 1474  git chechout step1
+ 1475  docker --version
+ 1476  sudo apt-get update
+ 1477  sudo apt-get install git
+ 1478  git --version
+ 1479  git config --global user.name"12345shivaleela"
+ 1480  git config --global user.name
+ 1481  git config user.name "12345shivaleela"
+ 1482  git config --global user.email"shivaleela922@gmail.com"
+ 1483  cd Hashmum
+ 1484  cd
+ 1485  pwd
+ 1486  mkdir Hushmum
+ 1487  pwd
+ 1488  cd
+ 1489  cd Hushmun
+ 1490  ls
+ 1491  cd Hushmum
+ 1492  sudo useradd shiv
+ 1493  sudo useradd user1
+ 1494  sudo useradd user2
+ 1495  cat  /etc/passwd
+ 1496  su - user1
+ 1497  su - user2
+ 1498  pwd
+ 1499  clear
+ 1500  cd ..
+ 1501  clear
+ 1502  mkdir hashmum
+ 1503  cd hushmum
+ 1504  pwd
+ 1505  ls
+ 1506  cd hushmum
+ 1507  pwd
+ 1508  ls
+ 1509  mkdir HUSHMUM
+ 1510  cd HUSHMUM
+ 1511  sudo adduser devops
+ 1512  sudo adduser docker
+ 1513  sudo adduser github
+ 1514  sudo adduser dockerhub
+ 1515  su - github
+ 1516  history
+ 1517  history > files.txt
+srilatha@LAPTOP-893AAFE1:~$ sudo apt update
+[sudo] password for srilatha:
+Hit:1 http://archive.ubuntu.com/ubuntu focal InRelease
+Get:2 http://security.ubuntu.com/ubuntu focal-security InRelease [114 kB]
+Hit:3 http://ppa.launchpad.net/ansible/ansible/ubuntu focal InRelease
+Get:4 http://archive.ubuntu.com/ubuntu focal-updates InRelease [114 kB]
+Get:5 http://security.ubuntu.com/ubuntu focal-security/main amd64 Packages [1109 kB]
+Get:6 http://archive.ubuntu.com/ubuntu focal-backports InRelease [108 kB]
+Get:7 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages [1445 kB]
+Get:8 http://security.ubuntu.com/ubuntu focal-security/main Translation-en [202 kB]
+Get:9 http://security.ubuntu.com/ubuntu focal-security/main amd64 c-n-f Metadata [9104 B]
+Get:10 http://security.ubuntu.com/ubuntu focal-security/restricted amd64 Packages [609 kB]
+Get:11 http://security.ubuntu.com/ubuntu focal-security/restricted Translation-en [86.8 kB]
+Get:12 http://security.ubuntu.com/ubuntu focal-security/restricted amd64 c-n-f Metadata [536 B]
+Get:13 http://security.ubuntu.com/ubuntu focal-security/universe amd64 Packages [675 kB]
+Get:14 http://archive.ubuntu.com/ubuntu focal-updates/main Translation-en [289 kB]
+Get:15 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 c-n-f Metadata [14.7 kB]
+Get:16 http://archive.ubuntu.com/ubuntu focal-updates/restricted amd64 Packages [663 kB]
+Get:17 http://security.ubuntu.com/ubuntu focal-security/universe Translation-en [114 kB]
+Get:18 http://security.ubuntu.com/ubuntu focal-security/universe amd64 c-n-f Metadata [13.0 kB]
+Get:19 http://security.ubuntu.com/ubuntu focal-security/multiverse amd64 Packages [21.8 kB]
+Get:20 http://security.ubuntu.com/ubuntu focal-security/multiverse amd64 c-n-f Metadata [536 B]
+Get:21 http://archive.ubuntu.com/ubuntu focal-updates/restricted Translation-en [94.6 kB]
+Get:22 http://archive.ubuntu.com/ubuntu focal-updates/restricted amd64 c-n-f Metadata [532 B]
+Get:23 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 Packages [892 kB]
+Get:24 http://archive.ubuntu.com/ubuntu focal-updates/universe Translation-en [195 kB]
+Get:25 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 c-n-f Metadata [20.0 kB]
+Get:26 http://archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 Packages [24.8 kB]
+Get:27 http://archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 c-n-f Metadata [620 B]
+Get:28 http://archive.ubuntu.com/ubuntu focal-backports/universe amd64 Packages [19.2 kB]
+Get:29 http://archive.ubuntu.com/ubuntu focal-backports/universe Translation-en [13.3 kB]
+Get:30 http://archive.ubuntu.com/ubuntu focal-backports/universe amd64 c-n-f Metadata [656 B]
+Fetched 6848 kB in 9s (743 kB/s)
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+97 packages can be upgraded. Run 'apt list --upgradable' to see them.
+srilatha@LAPTOP-893AAFE1:~$ sudo apt install software-properties-common
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+software-properties-common is already the newest version (0.99.9.8).
+0 upgraded, 0 newly installed, 0 to remove and 97 not upgraded.
+srilatha@LAPTOP-893AAFE1:~$ sudo apt-apt-repository-common
+sudo: apt-apt-repository-common: command not found
+srilatha@LAPTOP-893AAFE1:~$ sudo add-apt-repository --yes --update
+Error: need a repository as argument
+srilatha@LAPTOP-893AAFE1:~$ sudo apt install ansible
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following additional packages will be installed:
+srilatha@LAPTOP-893AAFE1:~$ sudo apt update
+[sudo] password for srilatha:
+Hit:1 http://archive.ubuntu.com/ubuntu focal InRelease
+Get:2 http://security.ubuntu.com/ubuntu focal-security InRelease [114 kB]
+Hit:3 http://ppa.launchpad.net/ansible/ansible/ubuntu focal InRelease
+Get:4 http://archive.ubuntu.com/ubuntu focal-updates InRelease [114 kB]
+Get:5 http://security.ubuntu.com/ubuntu focal-security/main amd64 Packages [1109 kB]
+Get:6 http://archive.ubuntu.com/ubuntu focal-backports InRelease [108 kB]
+Get:7 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages [1445 kB]
+Get:8 http://security.ubuntu.com/ubuntu focal-security/main Translation-en [202 kB]
+Get:9 http://security.ubuntu.com/ubuntu focal-security/main amd64 c-n-f Metadata [9104 B]
+Get:10 http://security.ubuntu.com/ubuntu focal-security/restricted amd64 Packages [609 kB]
+Get:11 http://security.ubuntu.com/ubuntu focal-security/restricted Translation-en [86.8 kB]
+Get:12 http://security.ubuntu.com/ubuntu focal-security/restricted amd64 c-n-f Metadata [536 B]
+Get:13 http://security.ubuntu.com/ubuntu focal-security/universe amd64 Packages [675 kB]
+Get:14 http://archive.ubuntu.com/ubuntu focal-updates/main Translation-en [289 kB]
+Get:15 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 c-n-f Metadata [14.7 kB]
+Get:16 http://archive.ubuntu.com/ubuntu focal-updates/restricted amd64 Packages [663 kB]
+Get:17 http://security.ubuntu.com/ubuntu focal-security/universe Translation-en [114 kB]
+Get:18 http://security.ubuntu.com/ubuntu focal-security/universe amd64 c-n-f Metadata [13.0 kB]
+Get:19 http://security.ubuntu.com/ubuntu focal-security/multiverse amd64 Packages [21.8 kB]
+Get:20 http://security.ubuntu.com/ubuntu focal-security/multiverse amd64 c-n-f Metadata [536 B]
+Get:21 http://archive.ubuntu.com/ubuntu focal-updates/restricted Translation-en [94.6 kB]
+Get:22 http://archive.ubuntu.com/ubuntu focal-updates/restricted amd64 c-n-f Metadata [532 B]
+Get:23 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 Packages [892 kB]
+Get:24 http://archive.ubuntu.com/ubuntu focal-updates/universe Translation-en [195 kB]
+Get:25 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 c-n-f Metadata [20.0 kB]
+Get:26 http://archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 Packages [24.8 kB]
+Get:27 http://archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 c-n-f Metadata [620 B]
+Get:28 http://archive.ubuntu.com/ubuntu focal-backports/universe amd64 Packages [19.2 kB]
+Get:29 http://archive.ubuntu.com/ubuntu focal-backports/universe Translation-en [13.3 kB]
+Get:30 http://archive.ubuntu.com/ubuntu focal-backports/universe amd64 c-n-f Metadata [656 B]
+Fetched 6848 kB in 9s (743 kB/s)
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+97 packages can be upgraded. Run 'apt list --upgradable' to see them.
+srilatha@LAPTOP-893AAFE1:~$ sudo apt install software-properties-common
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+software-properties-common is already the newest version (0.99.9.8).
+0 upgraded, 0 newly installed, 0 to remove and 97 not upgraded.
+srilatha@LAPTOP-893AAFE1:~$ sudo apt-apt-repository-common
+sudo: apt-apt-repository-common: command not found
+srilatha@LAPTOP-893AAFE1:~$ sudo add-apt-repository --yes --update
+Error: need a repository as argument
+srilatha@LAPTOP-893AAFE1:~$ sudo apt install ansible
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following additional packages will be installed:
+srilatha@LAPTOP-893AAFE1:~$ ansible all -m ping --ask-pass
+SSH password:
+[WARNING]: provided hosts list is empty, only localhost is available. Note that the
+implicit localhost does not match 'all'
+srilatha@LAPTOP-893AAFE1:~$ sudo yum install epel-release
+sudo: yum: command not found
+srilatha@LAPTOP-893AAFE1:~$ echo $SHELL
+/bin/bash
+srilatha@LAPTOP-893AAFE1:~$ #!/bin/bash
+srilatha@LAPTOP-893AAFE1:~$ echo hello world
+hello world
+srilatha@LAPTOP-893AAFE1:~$ nano jan.sh
+srilatha@LAPTOP-893AAFE1:~$ chmod +x jan.sh
+srilatha@LAPTOP-893AAFE1:~$ ./jan.sh
+welcome to shell scripting
+ABC             content.txt     input.sh          nano.save            strenth
+Abclmpex        decision.sh     jan.sh            nano.save.1          strings.txt
+Galaxyinfo.txt  demo1.txt       jan.txt           odd.sh               teddybear.sh
+HUSHMUM         demo_func.sh    linux             playbooks            tempshivaleela
+Hushmum         example.sh      loop.sh           print_odds.bash      tempy
+InitialGalaxy   exampleread.sh  mango.sh          reading.sh           trainee
+allcontent.txt  feb.txt         march.txt         self.sh              ust
+arg.sh          file.sh         markup.yml        shell                var.sh
+args.sh         flag1           mom               shi.sh               while.sh
+bash_alias      food.sh         mul.sh            shiv                 whiledemo.sh
+bash_aliases    forloop.sh      multicontent.txt  shiv.sh              whileloop.sh
+beta.txt        friends.sh      multiple.sh       shivaleela           xyz
+bhanu           fruits.sh       mycommands.sh     shivaleela-playbook  yaml.sh
+bhanu.txt       hashmum         myfile            shivaleela.yml       yml.sh
+bhanu.txt.save  helloscript.sh  myinfo.txt        shivaleela_playbook
+bootcamp        hobsdir         myscript.txt      shivaleelarole
+callfunc.sh     human           myshell.sh        smile
+colour.sh       ifelse.sh       name.sh           sri.yml
+the list of directories
+srilatha hyderabad
+srilatha@LAPTOP-893AAFE1:~$
+#!/bin/bash
+echo "welcome to shell scripting"
+ls
+echo "the list of directories"
+name=srilatha
+city=hyderabad
+echo "$name $city"
+
+srilatha@LAPTOP-893AAFE1:~$ apt list --upgradable
+Listing... Done
+accountsservice/focal-updates,focal-security 0.6.55-0ubuntu12~20.04.5 amd64 [upgradable from: 0.6.55-0ubuntu12~20.04.4]
+alsa-ucm-conf/focal-updates 1.2.2-1ubuntu0.11 all [upgradable from: 1.2.2-1ubuntu0.9]
+ansible-core/focal 2.12.1-1ppa~focal all [upgradable from: 2.11.7-1ppa~focal]
+apport/focal-updates,focal-security 2.20.11-0ubuntu27.21 all [upgradable from: 2.20.11-0ubuntu27.18]
+bind9-dnsutils/focal-updates,focal-security 1:9.16.1-0ubuntu2.9 amd64 [upgradable from: 1:9.16.1-0ubuntu2.8]
+bind9-host/focal-updates,focal-security 1:9.16.1-0ubuntu2.9 amd64 [upgradable from: 1:9.16.1-0ubuntu2.8]
+bind9-libs/focal-updates,focal-security 1:9.16.1-0ubuntu2.9 amd64 [upgradable from: 1:9.16.1-0ubuntu2.8]
+busybox-initramfs/focal-updates,focal-security 1:1.30.1-4ubuntu6.4 amd64 [upgradable from: 1:1.30.1-4ubuntu6.3]
+busybox-static/focal-updates,focal-security 1:1.30.1-4ubuntu6.4 amd64 [upgradable from: 1:1.30.1-4ubuntu6.3]
+ca-certificates/focal-updates,focal-security 20210119~20.04.2 all [upgradable from: 20210119~20.04.1]
+cloud-init/focal-updates 21.4-0ubuntu1~20.04.1 all [upgradable from: 21.2-3-g899bfaa9-0ubuntu2~20.04.1]
+cloud-initramfs-copymods/focal-updates 0.45ubuntu2 all [upgradable from: 0.45ubuntu1]
+cloud-initramfs-dyn-netconf/focal-updates 0.45ubuntu2 all [upgradable from: 0.45ubuntu1]
+command-not-found/focal-updates 20.04.5 all [upgradable from: 20.04.4]
+cpio/focal-updates,focal-security 2.13+dfsg-2ubuntu0.3 amd64 [upgradable from: 2.13+dfsg-2]
+curl/focal-updates,focal-security 7.68.0-1ubuntu2.7 amd64 [upgradable from: 7.68.0-1ubuntu2.6]
+distro-info-data/focal-updates,focal-security 0.43ubuntu1.9 all [upgradable from: 0.43ubuntu1.6]
+git-man/focal-updates,focal-security 1:2.25.1-1ubuntu3.2 all [upgradable from: 1:2.25.1-1ubuntu3.1]
+libaccountsservice0/focal-updates,focal-security 0.6.55-0ubuntu12~20.04.5 amd64 [upgradable from: 0.6.55-0ubuntu12~20.04.4]
+libasound2-data/focal-updates 1.2.2-2.1ubuntu2.5 all [upgradable from: 1.2.2-2.1ubuntu2.4]
+libasound2/focal-updates 1.2.2-2.1ubuntu2.5 amd64 [upgradable from: 1.2.2-2.1ubuntu2.4]libcurl3-gnutls/focal-updates,focal-security 7.68.0-1ubuntu2.7 amd64 [upgradable from: 7.68.0-1ubuntu2.6]
+libcurl4/focal-updates,focal-security 7.68.0-1ubuntu2.7 amd64 [upgradable from: 7.68.0-1ubuntu2.6]
+libdrm-amdgpu1/focal-updates 2.4.105-3~20.04.2 amd64 [upgradable from: 2.4.105-3~20.04.1]
+libdrm-common/focal-updates 2.4.105-3~20.04.2 all [upgradable from: 2.4.105-3~20.04.1]
+libdrm-intel1/focal-updates 2.4.105-3~20.04.2 amd64 [upgradable from: 2.4.105-3~20.04.1]
+libdrm-nouveau2/focal-updates 2.4.105-3~20.04.2 amd64 [upgradable from: 2.4.105-3~20.04.1]
+libdrm-radeon1/focal-updates 2.4.105-3~20.04.2 amd64 [upgradable from: 2.4.105-3~20.04.1]
+libdrm2/focal-updates 2.4.105-3~20.04.2 amd64 [upgradable from: 2.4.105-3~20.04.1]
+libgcrypt20/focal-updates,focal-security 1.8.5-5ubuntu1.1 amd64 [upgradable from: 1.8.5-5ubuntu1]
+libgl1-mesa-dri/focal-updates 21.0.3-0ubuntu0.3~20.04.5 amd64 [upgradable from: 21.0.3-0ubuntu0.3~20.04.1]
+libglapi-mesa/focal-updates 21.0.3-0ubuntu0.3~20.04.5 amd64 [upgradable from: 21.0.3-0ubuntu0.3~20.04.1]
+libglx-mesa0/focal-updates 21.0.3-0ubuntu0.3~20.04.5 amd64 [upgradable from: 21.0.3-0ubuntu0.3~20.04.1]
+libicu66/focal-updates,focal-security 66.1-2ubuntu2.1 amd64 [upgradable from: 66.1-2ubuntu2]
+libllvm12/focal-updates 1:12.0.0-3ubuntu1~20.04.4 amd64 [upgradable from: 1:12.0.0-3ubuntu1~20.04.3]
+libnetplan0/focal-updates 0.103-0ubuntu5~20.04.5 amd64 [upgradable from: 0.102-0ubuntu1~20.04.2]
+libnss-systemd/focal-updates 245.4-4ubuntu3.14 amd64 [upgradable from: 245.4-4ubuntu3.11]
+libnss3/focal-updates,focal-security 2:3.49.1-1ubuntu1.6 amd64 [upgradable from: 2:3.49.1-1ubuntu1.5]
+libntfs-3g883/focal-updates,focal-security 1:2017.3.23AR.3-3ubuntu1.1 amd64 [upgradable from: 1:2017.3.23AR.3-3ubuntu1]
+libpam-modules-bin/focal-updates 1.3.1-5ubuntu4.3 amd64 [upgradable from: 1.3.1-5ubuntu4.2]
+libpam-modules/focal-updates 1.3.1-5ubuntu4.3 amd64 [upgradable from: 1.3.1-5ubuntu4.2]libpam-runtime/focal-updates 1.3.1-5ubuntu4.3 all [upgradable from: 1.3.1-5ubuntu4.2]
+libpam-systemd/focal-updates 245.4-4ubuntu3.14 amd64 [upgradable from: 245.4-4ubuntu3.11]
+libpam0g/focal-updates 1.3.1-5ubuntu4.3 amd64 [upgradable from: 1.3.1-5ubuntu4.2]
+libprocps8/focal-updates 2:3.3.16-1ubuntu2.3 amd64 [upgradable from: 2:3.3.16-1ubuntu2.2]
+libpulse0/focal-updates 1:13.99.1-1ubuntu3.13 amd64 [upgradable from: 1:13.99.1-1ubuntu3.11]
+libprocps8/focal-updates 2:3.3.16-1ubuntu2.3 amd64 [upgradable from: 2:3.3.16-1ubuntu2.2]
+libpulse0/focal-updates 1:13.99.1-1ubuntu3.13 amd64 [upgradable from: 1:13.99.1-1ubuntu3.11]
+libpulsedsp/focal-updates 1:13.99.1-1ubuntu3.13 amd64 [upgradable from: 1:13.99.1-1ubuntu3.11]
+libpython3.8-minimal/focal-updates,focal-security 3.8.10-0ubuntu1~20.04.2 amd64 [upgradable from: 3.8.10-0ubuntu1~20.04]
+libpython3.8-stdlib/focal-updates,focal-security 3.8.10-0ubuntu1~20.04.2 amd64 [upgradable from: 3.8.10-0ubuntu1~20.04]
+libpython3.8/focal-updates,focal-security 3.8.10-0ubuntu1~20.04.2 amd64 [upgradable from: 3.8.10-0ubuntu1~20.04]
+libseccomp2/focal-updates,focal-security 2.5.1-1ubuntu1~20.04.2 amd64 [upgradable from: 2.5.1-1ubuntu1~20.04.1]
+libssh-4/focal-updates,focal-security 0.9.3-2ubuntu2.2 amd64 [upgradable from: 0.9.3-2ubuntu2.1]
+libssl1.1/focal-updates 1.1.1f-1ubuntu2.10 amd64 [upgradable from: 1.1.1f-1ubuntu2.5]
+libsystemd0/focal-updates 245.4-4ubuntu3.14 amd64 [upgradable from: 245.4-4ubuntu3.11]
+libtdb1/focal-updates,focal-security 1.4.3-0ubuntu0.20.04.1 amd64 [upgradable from: 1.4.2-3build1]
+libudev1/focal-updates 245.4-4ubuntu3.14 amd64 [upgradable from: 245.4-4ubuntu3.11]
+libudisks2-0/focal-updates 2.8.4-1ubuntu2 amd64 [upgradable from: 2.8.4-1ubuntu1]
+linux-base/focal-updates 4.5ubuntu3.7 all [upgradable from: 4.5ubuntu3.6]
+mesa-vulkan-drivers/focal-updates 21.0.3-0ubuntu0.3~20.04.5 amd64 [upgradable from: 21.0.3-0ubuntu0.3~20.04.1]
+netplan.io/focal-updates 0.103-0ubuntu5~20.04.5 amd64 [upgradable from: 0.102-0ubuntu1~20.04.2]
+ntfs-3g/focal-updates,focal-security 1:2017.3.23AR.3-3ubuntu1.1 amd64 [upgradable from: 1:2017.3.23AR.3-3ubuntu1]
+open-vm-tools/focal-updates 2:11.3.0-2ubuntu0~ubuntu20.04.2 amd64 [upgradable from: 2:11.0.5-4]
+openssh-client/focal-updates 1:8.2p1-4ubuntu0.4 amd64 [upgradable from: 1:8.2p1-4ubuntu0.3]
+openssh-server/focal-updates 1:8.2p1-4ubuntu0.4 amd64 [upgradable from: 1:8.2p1-4ubuntu0.3]
+openssh-sftp-server/focal-updates 1:8.2p1-4ubuntu0.4 amd64 [upgradable from: 1:8.2p1-4ubuntu0.3]
+openssl/focal-updates 1.1.1f-1ubuntu2.10 amd64 [upgradable from: 1.1.1f-1ubuntu2.5]
+overlayroot/focal-updates 0.45ubuntu2 all [upgradable from: 0.45ubuntu1]
+procps/focal-updates 2:3.3.16-1ubuntu2.3 amd64 [upgradable from: 2:3.3.16-1ubuntu2.2]
+pulseaudio-utils/focal-updates 1:13.99.1-1ubuntu3.13 amd64 [upgradable from: 1:13.99.1-1ubuntu3.11]
+python-apt-common/focal-updates 2.0.0ubuntu0.20.04.6 all [upgradable from: 2.0.0ubuntu0.20.04.5]
+python3-apport/focal-updates,focal-security 2.20.11-0ubuntu27.21 all [upgradable from: 2.20.11-0ubuntu27.18]
+python3-apt/focal-updates 2.0.0ubuntu0.20.04.6 amd64 [upgradable from: 2.0.0ubuntu0.20.04.5]
+python3-commandnotfound/focal-updates 20.04.5 all [upgradable from: 20.04.4]
+python3-problem-report/focal-updates,focal-security 2.20.11-0ubuntu27.21 all [upgradable from: 2.20.11-0ubuntu27.18]
+python3-update-manager/focal-updates 1:20.04.10.9 all [upgradable from: 1:20.04.10.7]
+python3.8-minimal/focal-updates,focal-security 3.8.10-0ubuntu1~20.04.2 amd64 [upgradable from: 3.8.10-0ubuntu1~20.04]
+python3.8/focal-updates,focal-security 3.8.10-0ubuntu1~20.04.2 amd64 [upgradable from: 3.8.10-0ubuntu1~20.04]
+rsync/focal-updates 3.1.3-8ubuntu0.1 amd64 [upgradable from: 3.1.3-8]
+snapd/focal-updates 2.51.1+20.04ubuntu2 amd64 [upgradable from: 2.49.2+20.04]
+squashfs-tools/focal-updates,focal-security 1:4.4-1ubuntu0.3 amd64 [upgradable from: 1:4.4-1]
+systemd-sysv/focal-updates 245.4-4ubuntu3.14 amd64 [upgradable from: 245.4-4ubuntu3.11]systemd-timesyncd/focal-updates 245.4-4ubuntu3.14 amd64 [upgradable from: 245.4-4ubuntu3.11]
+systemd/focal-updates 245.4-4ubuntu3.14 amd64 [upgradable from: 245.4-4ubuntu3.11]
+tzdata/focal-updates,focal-security 2021e-0ubuntu0.20.04 all [upgradable from: 2021a-0ubuntu0.20.04]
+ubuntu-advantage-tools/focal-updates 27.4.2~20.04.1 amd64 [upgradable from: 27.2.2~20.04.1]
+udev/focal-updates 245.4-4ubuntu3.14 amd64 [upgradable from: 245.4-4ubuntu3.11]
+udisks2/focal-updates 2.8.4-1ubuntu2 amd64 [upgradable from: 2.8.4-1ubuntu1]
+ufw/focal-updates 0.36-6ubuntu1 all [upgradable from: 0.36-6]
+update-manager-core/focal-updates 1:20.04.10.9 all [upgradable from: 1:20.04.10.7]
+update-notifier-common/focal-updates 3.192.30.10 all [upgradable from: 3.192.30.9]
+vim-common/focal-updates,focal-security 2:8.1.2269-1ubuntu5.4 all [upgradable from: 2:8.1.2269-1ubuntu5]
+vim-runtime/focal-updates,focal-security 2:8.1.2269-1ubuntu5.4 all [upgradable from: 2:8.1.2269-1ubuntu5]
+vim-tiny/focal-updates,focal-security 2:8.1.2269-1ubuntu5.4 amd64 [upgradable from: 2:8.1.2269-1ubuntu5]
+vim/focal-updates,focal-security 2:8.1.2269-1ubuntu5.4 amd64 [upgradable from: 2:8.1.2269-1ubuntu5]
+wget/focal-updates 1.20.3-1ubuntu2 amd64 [upgradable from: 1.20.3-1ubuntu1]
+xxd/focal-updates,focal-security 2:8.1.2269-1ubuntu5.4 amd64 [upgradable from: 2:8.1.2269-1ubuntu5]
+srilatha@LAPTOP-893AAFE1:~$ nano decision.sh
+srilatha@LAPTOP-893AAFE1:~$ chmod 774 desicion.sh
+srilatha@LAPTOP-893AAFE1:~$ nano decision.sh
+srilatha@LAPTOP-893AAFE1:~$ chmod 774 desicion.sh
+chmod: cannot access 'desicion.sh': No such file or directory
+srilatha@LAPTOP-893AAFE1:~$ chmod 774 decision.sh
+srilatha@LAPTOP-893AAFE1:~$ ./decision.sh
+demo of if -else
+Enter a fruit name
+apple
+ I also love this apple
+srilatha@LAPTOP-893AAFE1:~$ cat decision.sh
+#!/bin/bash
+echo "demo of if -else"
+echo "Enter a fruit name"
+read fruit
+if [ $fruit = mango ]
+        then echo "I like Mangoes"
+        else echo " I also love this $fruit"
+fi
+srilatha@LAPTOP-893AAFE1:~$ nano mango.sh
+srilatha@LAPTOP-893AAFE1:~$ chmod 774 mango.sh
+srilatha@LAPTOP-893AAFE1:~$ ./mango.sh
+demo of if -else
+Enter a fruit name
+apple
+ I love apple
+srilatha@LAPTOP-893AAFE1:~$ cat mango.sh
+#!/bin/bash
+echo "demo of if -else"
+echo "Enter a fruit name"
+read fruit
+if [ $fruit = mango ]
+        then echo "I like Mangoes"
+elif [ $fruit = apple ]
+        then echo  " I love apple"
+elif [ $fruit = orange ]
+        then echo "Oranges are juicy and i like this fruit"
+        else echo "i also love this $fruit"
+fi
+
+srilatha@LAPTOP-893AAFE1:~$ nano fruits.sh
+srilatha@LAPTOP-893AAFE1:~$ chmod 774 fruits.sh
+srilatha@LAPTOP-893AAFE1:~$ ./fruits.sh
+demo of if -else
+Enter a fruit name
+orange
+Oranges are juicy and i like this fruit
+srilatha@LAPTOP-893AAFE1:~$ nano helloscript.sh
+srilatha@LAPTOP-893AAFE1:~$ chmod 774 hellosript.sh
+chmod: cannot access 'hellosript.sh': No such file or directory
+srilatha@LAPTOP-893AAFE1:~$ chmod 774 helloscript.shff
+chmod: cannot access 'helloscript.shff': No such file or directory
+srilatha@LAPTOP-893AAFE1:~$ chmod 774  helloscript.sh
+srilatha@LAPTOP-893AAFE1:~$ ./helloscript.sh
+./helloscript.sh: line 1: x#!/bin/bash: No such file or directory
+The script title is ./helloscript.sh
+The first argument is
+The first argument is
+The first argument is
+The first argument is
+The first argument is
+The first argument is
+The first argument is
+The first argument is
+The first argument is
+/$ 1164is the PID of the script
+/# The total number of parameters in the script 0
+srilatha@LAPTOP-893AAFE1:~$ cat helloscript.sh
+x#!/bin/bash
+echo The script title is $0
+#
+echo The first argument is $1
+echo The first argument is $2
+echo The first argument is $3
+echo The first argument is $4
+echo The first argument is $5
+echo The first argument is $6
+echo The first argument is $7
+echo The first argument is $8
+echo The first argument is $9
+#
+echo /$ $$is the PID of the script
+echo /# The total number of parameters in the script $#
+
+srilatha@LAPTOP-893AAFE1:~$ nano reading.sh
+srilatha@LAPTOP-893AAFE1:~$ chmod 774 reading.sh
+srilatha@LAPTOP-893AAFE1:~$ cat reading.sh
+
+
+echo enter your name:
+read name
+echo jobrole:
+read job
+echo enter  your city:
+read city
+
+srilatha@LAPTOP-893AAFE1:~$ ./reading.sh
+enter your name:
+shivaleela
+jobrole:
+software enginerer
+enter your city:
+hyderabad
+srilatha@LAPTOP-893AAFE1:~$ nano hi.sh
+srilatha@LAPTOP-893AAFE1:~$ nano loop.sh
+srilatha@LAPTOP-893AAFE1:~$ chmod 774 loop.sh
+srilatha@LAPTOP-893AAFE1:~$ cat loop.sh
+#!/bin/bash
+echo "a number is even or odd"
+echo -m "enter a number"
+read n
+echo -m "result: "
+if [ " $m 2" == 0 ]
+        then echo "$m a number is even"
+        else echo "$m a number is odd"
+fi
+
+srilatha@LAPTOP-893AAFE1:~$ ./ar_loop.sh
+-bash: ./ar_loop.sh: No such file or directory
+srilatha@LAPTOP-893AAFE1:~$ ./loop.sh
+a number is even or odd
+-m enter a number
+3
+-m result:
+ a number is odd
+srilatha@LAPTOP-893AAFE1:~$ nano hey.sh
+srilatha@LAPTOP-893AAFE1:~$ nano hellofunction.sh
+srilatha@LAPTOP-893AAFE1:~$ nano demo_func.sh
+srilatha@LAPTOP-893AAFE1:~$ chmod 774 demo_func.sh
+srilatha@LAPTOP-893AAFE1:~$ ./demo_func.sh
+Demo of function
+Welcome to all bash scripting
+This is function body
+argument 1 is
+srilatha@LAPTOP-893AAFE1:~$ cat demo_func.sh
+myfunction(){
+        echo "Demo of function"
+         echo "Welcome to all bash scripting"
+        echo "This is function body"
+        echo "argument 1 is $1"
+}
+myfunction $1 $2 $3
+
+srilatha@LAPTOP-893AAFE1:~$ nano hellofunc.sh
+srilatha@LAPTOP-893AAFE1:~$ nano ./hellfunc.sh
+srilatha@LAPTOP-893AAFE1:~$ ansible -h
+usage: ansible [-h] [--version] [-v] [-b] [--become-method BECOME_METHOD] [--become-user BECOME_USER] [-K] [-i INVENTORY] [--list-hosts] [-l SUBSET]
+               [-P POLL_INTERVAL] [-B SECONDS] [-o] [-t TREE] [-k] [--private-key PRIVATE_KEY_FILE] [-u REMOTE_USER] [-c CONNECTION] [-T TIMEOUT]
+               [--ssh-common-args SSH_COMMON_ARGS] [--sftp-extra-args SFTP_EXTRA_ARGS] [--scp-extra-args SCP_EXTRA_ARGS] [--ssh-extra-args SSH_EXTRA_ARGS] [-C]
+               [--syntax-check] [-D] [-e EXTRA_VARS] [--vault-id VAULT_IDS] [--ask-vault-password | --vault-password-file VAULT_PASSWORD_FILES] [-f FORKS]
+               [-M MODULE_PATH] [--playbook-dir BASEDIR] [--task-timeout TASK_TIMEOUT] [-a MODULE_ARGS] [-m MODULE_NAME]
+               pattern
+
+Define and run a single task 'playbook' against a set of hosts
+
+positional arguments:
+  pattern               host pattern
+
+optional arguments:
+  --ask-vault-password, --ask-vault-pass
+                        ask for vault password
+  --list-hosts          outputs a list of matching hosts; does not execute anything else
+  --playbook-dir BASEDIR
+                        Since this tool does not use playbooks, use this as a substitute playbook directory.This sets the relative path for many features including
+                        roles/ group_vars/ etc.
+  --syntax-check        perform a syntax check on the playbook, but do not execute it
+  --task-timeout TASK_TIMEOUT
+                        set task timeout limit in seconds, must be positive integer.
+  --vault-id VAULT_IDS  the vault identity to use
+  --vault-password-file VAULT_PASSWORD_FILES, --vault-pass-file VAULT_PASSWORD_FILES
+                        vault password file
+  --version             show program's version number, config file location, configured module search path, module location, executable location and exit
+  -B SECONDS, --background SECONDS
+                        run asynchronously, failing after X seconds (default=N/A)
+  -C, --check           don't make any changes; instead, try to predict some of the changes that may occur
+  -D, --diff            when changing (small) files and templates, show the differences in those files; works great with --check
+  -M MODULE_PATH, --module-path MODULE_PATH
+                        prepend colon-separated path(s) to module library (default=~/.ansible/plugins/modules:/usr/share/ansible/plugins/modules)
+  -P POLL_INTERVAL, --poll POLL_INTERVAL
+                        set the poll interval if using -B (default=15)
+  -a MODULE_ARGS, --args MODULE_ARGS
+                        The action's options in space separated k=v format: -a 'opt1=val1 opt2=val2'
+  -e EXTRA_VARS, --extra-vars EXTRA_VARS
+                        set additional variables as key=value or YAML/JSON, if filename prepend with @
+  -f FORKS, --forks FORKS
+                        specify number of parallel processes to use (default=5)
+  -h, --help            show this help message and exit
+-i INVENTORY, --inventory INVENTORY, --inventory-file INVENTORY
+                        specify inventory host path or comma separated host list. --inventory-file is deprecated
+  -l SUBSET, --limit SUBSET
+                        further limit selected hosts to an additional pattern
+  -m MODULE_NAME, --module-name MODULE_NAME
+                        Name of the action to execute (default=command)
+  -o, --one-line        condense output
+  -t TREE, --tree TREE  log output to this directory
+  -v, --verbose         verbose mode (-vvv for more, -vvvv to enable connection debugging)
+
+Privilege Escalation Options:
+  control how and which user you become as on target hosts
+
+  --become-method BECOME_METHOD
+                        privilege escalation method to use (default=sudo), use `ansible-doc -t become -l` to list valid choices.
+  --become-user BECOME_USER
+                        run operations as this user (default=root)
+  -K, --ask-become-pass
+                        ask for privilege escalation password
+  -b, --become          run operations with become (does not imply password prompting)
+
+Connection Options:
+  control as whom and how to connect to hosts
+
+  --private-key PRIVATE_KEY_FILE, --key-file PRIVATE_KEY_FILE
+                        use this file to authenticate the connection
+  --scp-extra-args SCP_EXTRA_ARGS
+                        specify extra arguments to pass to scp only (e.g. -l)
+  --sftp-extra-args SFTP_EXTRA_ARGS
+                        specify extra arguments to pass to sftp only (e.g. -f, -l)
+  --ssh-common-args SSH_COMMON_ARGS
+                        specify common arguments to pass to sftp/scp/ssh (e.g. ProxyCommand)
+  --ssh-extra-args SSH_EXTRA_ARGS
+                        specify extra arguments to pass to ssh only (e.g. -R)
+  -T TIMEOUT, --timeout TIMEOUT
+                        override the connection timeout in seconds (default=10)
+  -c CONNECTION, --connection CONNECTION
+                        connection type to use (default=smart)
+  -k, --ask-pass        ask for connection password
+  -u REMOTE_USER, --user REMOTE_USER
+                        connect as this user (default=None)
+
+Some actions do not make sense in Ad-Hoc (include, meta, etc)
+srilatha@LAPTOP-893AAFE1:~$ ansible --version
+ansible [core 2.11.7]
+  config file = /etc/ansible/ansible.cfg
+  configured module search path = ['/home/shivaleela/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python3/dist-packages/ansible
+  ansible collection location = /home/shivaleela/.ansible/collections:/usr/share/ansible/collections
+  executable location = /usr/bin/ansible
+  python version = 3.8.10 (default, Jun  2 2021, 10:49:15) [GCC 9.4.0]
+  jinja version = 2.10.1
+  libyaml = True
+srilatha@LAPTOP-893AAFE1:~$ ansible all -m setup
+[WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+srilatha@LAPTOP-893AAFE1:~$ ansible-galaxy -h
+usage: ansible-galaxy [-h] [--version] [-v] TYPE ...
+
+Perform various Role and Collection related operations.
+
+positional arguments:
+  TYPE
+    collection   Manage an Ansible Galaxy collection.
+    role         Manage an Ansible Galaxy role.
+
+optional arguments:
+  --version      show program's version number, config file location, configured module search path, module location, executable location and exit
+  -h, --help     show this help message and exit
+  -v, --verbose  verbose mode (-vvv for more, -vvvv to enable connection debugging)
+srilatha@LAPTOP-893AAFE1:~$ sudo apt install tree
+[sudo] password for shivaleela:
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+tree is already the newest version (1.8.0-1).
+0 upgraded, 0 newly installed, 0 to remove and 96 not upgraded.
+srilatha@LAPTOP-893AAFE1:~$ ls
+ABC             bash_alias      content.txt     food.sh         input.sh    mul.sh            nano.save        sri                 strenth         whiledemo.sh
+Abclmpex        bash_aliases    decision.sh     forloop.sh      jan.sh      multicontent.txt  nano.save.1      sri.sh              strings.txt     whileloop.sh
+Galaxyinfo.txt  beta.txt        demo1.txt       friends.sh      jan.txt     multiple.sh       odd.sh           srilatha           teddybear.sh    xyz
+HUSHMUM         bhanu           demo_func.sh    fruits.sh       linux       mycommands.sh     playbooks        srilatha-playbook  tempshivaleela  yaml.sh
+Hushmum         bhanu.txt       example.sh      hashmum         loop.sh     myfile            print_odds.bash  srilatha.yml       tempy           yml.sh
+InitialGalaxy   bhanu.txt.save  exampleread.sh  helloscript.sh  mango.sh    myinfo.txt        reading.sh       srilatha_playbook  trainee
+allcontent.txt  bootcamp        feb.txt         hobsdir         march.txt   myscript.txt      self.sh          srilatharole       ust
+arg.sh          callfunc.sh     file.sh         human           markup.yml  myshell.sh        shell            smile                var.sh
+args.sh         colour.sh       flag1           ifelse.sh       mom         name.sh           shi.sh           sri.yml              while.sh
+srilatha@LAPTOP-893AAFE1:~$ nano sri.yml
+srilatha@LAPTOP-893AAFE1:~$ cat sri.yml
+---
+- hosts: LEELA
+  tasks:
+    - name: Nani
+      debug:
+        msg: Hello Teddybear
+        job: Software Engineer
+
+srilatha@LAPTOP-893AAFE1:~$ ansible-playbook sri.yml
+[WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+[WARNING]: Could not match supplied host pattern, ignoring: LEELA
+
+PLAY [sri] ***********************************************************************************************************************************************************skipping: no hosts matched
+
+PLAY RECAP *************************************************************************************************************************************************************
+srilatha@LAPTOP-893AAFE1:~$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
